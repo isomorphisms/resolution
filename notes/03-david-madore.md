@@ -9,6 +9,8 @@ Two projects matter here:
 
 A later project of his used Laplace spectra and Casimir eigenvalues to make compact Lie groups “ring” after an imagined strike.
 
+A further video, **[The sound of some grassmannians](https://www.youtube.com/watch?v=lDPaVD-ZrcQ)**, was identified by the user. It sonifies vibrational spectra of real, complex, and quaternionic Grassmannians and the octonionic projective plane. Its confirmed title, author's YouTube channel, mathematical setting, and outstanding source-code questions are recorded in [06-grassmannian-spectra.md](06-grassmannian-spectra.md). This is not the 2017 character video or the compact-*group* strike experiment.
+
 ## 1. The Cubic Surfaces DVD
 
 Primary page:
