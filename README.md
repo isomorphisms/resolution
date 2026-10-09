@@ -90,6 +90,7 @@ A₁ → D₄ → E₈
 - [`notes/03-david-madore.md`](notes/03-david-madore.md) — notes on Madore's singularity films and Lie-theoretic sonification.
 - [`notes/04-audio.md`](notes/04-audio.md) — three mathematically distinct audio systems.
 - [`notes/05-complex-slice-atlas.md`](notes/05-complex-slice-atlas.md) — six real input channels, all twenty coordinate triples, `Re(f)=0`/`Im(f)=0`, Riemann-sphere chart boundaries, and the distinction between moving an input slice and moving an output probe.
+- [`notes/06-grassmannian-spectra.md`](notes/06-grassmannian-spectra.md) — Madore's *The sound of some grassmannians*, spectral reconstruction questions, and the distinction between three sonification methods.
 - [`sources/README.md`](sources/README.md) — source ledger and links into the other repositories.
 - [`papers/README.md`](papers/README.md) — Patrick du Val's original three-part paper and modern guides.
 
