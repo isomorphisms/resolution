@@ -140,6 +140,14 @@ Checked points:
 - adjoint mode normalized to `440 Hz`;
 - examples through `E₈`.
 
+### Grassmannian spectra video
+
+- David A. Madore, *The sound of some grassmannians*: https://www.youtube.com/watch?v=lDPaVD-ZrcQ
+- Author's YouTube channel, resolved from video oEmbed: https://www.youtube.com/@davidamadore/videos
+- Author's linked further discussion: https://twitter.com/gro_tsen/status/1164864635163545601
+
+Status: **video metadata and description checked; video audio and linked thread not independently transcribed**. The description says the spectra are of real, complex, quaternionic Grassmannians and the octonionic projective plane. Exact amplitude, metric normalization, and synthesis details are still unverified. See [the dedicated note](../notes/06-grassmannian-spectra.md).
+
 ## 5. Attribution trail
 
 Names that should remain visible as the project grows:
