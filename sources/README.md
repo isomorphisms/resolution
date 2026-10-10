@@ -148,7 +148,19 @@ Checked points:
 
 Status: **video metadata and description checked; video audio and linked thread not independently transcribed**. The description says the spectra are of real, complex, quaternionic Grassmannians and the octonionic projective plane. Exact amplitude, metric normalization, and synthesis details are still unverified. See [the dedicated note](../notes/06-grassmannian-spectra.md).
 
-## 5. Attribution trail
+## 5. Richard E. Borcherds — an explicit E₈ resolution
+
+- *Algebraic geometry 39: Du Val singularities* (2020):
+  https://www.youtube.com/watch?v=s2LYtd_UPY8
+- Independent catalogue: https://mathvideos.org/2020/richard-borcherds-algebraic-geometry-xxxix/
+- Detailed notes and rederived equations: [`../notes/06-richard-borcherds-du-val.md`](../notes/06-richard-borcherds-du-val.md)
+- Closely related lectures: 34–35 (*Blowing up a point*, *More on blowups*); 37–38 (*Singular points*, *The Zariski tangent space*); 40 (*Examples of resolutions*).
+
+Status: **lecture transcript examined; substitutions rederived**. The automatic transcript contains symbol and name errors, so the mathematical equations in our notes were checked by substitution rather than transcribed verbatim. No claim to have checked the on-screen handwriting frame by frame. In particular, the A₁ and D₄ residual singularities and three A₁ points over D₄ can be derived from those equations.
+
+This lecture gives an explicit blowup computation; it is **not** one of David A. Madore's rendered surface movies. Its ordinary point-blowup sequence provides concrete input for a true resolution animation, while the full exceptional-intersection ledger remains to be completed.
+
+## 6. Attribution trail
 
 Names that should remain visible as the project grows:
 
@@ -162,11 +174,12 @@ Names that should remain visible as the project grows:
 - **Fritz Peter** — Peter–Weyl theory;
 - **David Eisenbud** — immediate commutative-algebra exposition used here;
 - **Miles Reid** — immediate surface-singularity exposition used here;
-- **David A. Madore** — films and sound experiments used as design references.
+- **David A. Madore** — films and sound experiments used as design references;
+- **Richard E. Borcherds** — explicit E₈ point-blowup computation in algebraic geometry lecture 39.
 
 When a later note relies on a joint paper, credit every author rather than attaching the result only to the best-known name.
 
-## 6. Copyright and vendoring
+## 7. Copyright and vendoring
 
 - Summarize copyrighted books and papers; do not paste long passages.
 - Link Reid's author-posted PDFs unless a redistribution license is verified.
@@ -174,9 +187,9 @@ When a later note relies on a joint paper, credit every author rather than attac
 - Madore explicitly placed the Cubic Surfaces DVD, source, and related material in the public domain. It can be vendored later, but retain his name and the provenance notice.
 - Every imported code package should carry its original license and an unmodified source link.
 
-## 7. Reading still needed
+## 8. Reading still needed
 
-1. Work through Reid's `E₈` calculations deeply enough to produce a chart-by-chart ledger.
+1. Extend the Borcherds E₈ chart sequence into a complete exceptional-component ledger and independently calculate the intersection matrix, cross-checking Reid.
 2. Read all three du Val papers with a notation concordance.
 3. Compare an ordinary-blowup resolution with an economical weighted-blowup or toric route.
 4. Read the relevant Artin and Laufer sources named by Reid.
