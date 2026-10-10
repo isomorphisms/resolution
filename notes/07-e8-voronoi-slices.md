@@ -26,11 +26,30 @@ The apparent “3D section” of the video is made into a film as follows:
 1. Choose a random three-dimensional affine section of the eight-dimensional tessellation.
 2. Show **two spatial dimensions** as screen coordinates.
 3. Sweep the displayed plane uniformly through the **third section dimension** as time advances.
-4. Give each displayed Voronoi region a color using **three other orthogonal directions**. The precise color transfer function is not specified in the description.
+4. Color each displayed Voronoi region using the **projection of its nearest E₈ lattice point along three further orthogonal axes**. Madore explicitly explains the nearest-site coloring idea in his MathOverflow answer. The numerical RGB transfer function has not been recovered.
 
 A lattice point designated the origin occurs **at the screen center, at the exact midpoint of the film**. The construction is centrally symmetric about this event, providing a convenient visual and algorithmic check.
 
 This is a moving **section**, not an orthogonal projection of all cells on top of one another. A section partitions the displayed plane into regions; a projection would overlap huge numbers of cells.
+
+## 1a. Companion videos: the same lattice, several ways to see it
+
+The author posted a concise index and commentary in [his MathOverflow answer about surprising mathematical images](https://mathoverflow.net/a/178309) (under the name Gro-Tsen). It distinguishes grayscale **distance-to-nearest-site** displays from **colored nearest-site-label** displays, and random slices from highly symmetric Coxeter-plane slices.
+
+| Video | Slice orientation | Displayed quantity |
+| --- | --- | --- |
+| [Random 3D cross-section](https://www.youtube.com/watch?v=VSAnezNAjLg) (**user's link**) | random | nearest-site colors |
+| [Random 3D cross-section: distance map](https://www.youtube.com/watch?v=Q3MDd3hcKUE) | same kind of random section | squared nearest-site distance |
+| [Coxeter-plane cross-section](https://www.youtube.com/watch?v=w7y8HA-k_b4) | E₈ Coxeter plane; order 30 | nearest-site colors |
+| [Coxeter-plane distance map](https://www.youtube.com/watch?v=LPVT8aDK2pc) | E₈ Coxeter plane; order 30 | squared nearest-site distance |
+| [Order-24 symmetry plane: distance map](https://www.youtube.com/watch?v=7ai3Joup5SQ) | plane with order-24 lattice symmetry | squared nearest-site distance |
+| [Coxeter-plane wider view](https://www.youtube.com/watch?v=t7zVizg3LMU) | Coxeter plane | nearest-site colors, 3× larger horizontal and vertical field of view |
+
+**The grayscale convention** is black for squared distance 0 and white for squared distance 1, so bisectors appear as pale lines. With a Coxeter-plane section, the exact **30-fold symmetry** becomes visible at the centered lattice point; the order-24 version illustrates the same technique with a different invariant plane. Generic nearby sections typically have only approximate visual traces of those symmetries. The origin-centered instant is a good way to test the implementation.
+
+A valuable design lesson is to offer **two synchronized display modes on the same slice**: nearest-site identity (discrete regions) and squared distance (continuous scalar field). Madore's own description connects the two; they communicate different information.
+
+Compare also Madore's [*The beauty of E8*](https://www.youtube.com/watch?v=E-LC_l3gNuc), which rotates and **projects the 240-root Gosset polytope** instead of slicing the Voronoi tessellation. His Fourier-transform videos introduce another distinct scalar field on the same higher-dimensional coordinates.
 
 ## 2. An exact mathematical model of the film
 
@@ -139,6 +158,7 @@ A productive comparison scene could place (a) the eight-vertex Dynkin tree and n
 ## 6. Further original work and credit
 
 - **David A. Madore**, [*Voronoi cells of the E8 lattice: a random three-dimensional cross-section*](https://www.youtube.com/watch?v=VSAnezNAjLg): primary video description for counts, section/time convention, color directions and midpoint symmetry. Rendering source/code availability **not verified**.
+- **Gro-Tsen** (David A. Madore), [MathOverflow explanation of E₈ Voronoi sections and companion videos](https://mathoverflow.net/a/178309): identifies the grayscale squared-distance plot and nearest-lattice-site RGB projection. The exact coloring constants remain unverified.
 - **David A. Madore**, [*The E8 root system*](https://www.madore.org/~david/math/e8w.html): interactive root-system projection; 112 integer roots plus 128 half-integer roots, Weyl-group actions, and alternative projection directions.
 - **Mathieu Dutour Sikirić, David Madore, Philippe Moustrou, and Frank Vallentin**, [*Coloring the Voronoi tessellation of lattices*](https://arxiv.org/abs/1907.09751): related work on coloring lattice Voronoi cells. **Not established** as the algorithm used to assign the film's RGB colors; do not conflate them.
 - For root/intersection conventions, compare Miles Reid's Du Val guide recorded in [the source ledger](../sources/README.md).
