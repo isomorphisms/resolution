@@ -5,7 +5,7 @@
 
 **Complete coverage:** 54/54 source films, in original DVD order. The [machine-readable exact coefficient ledger](../data/madore-cubic-polynomials.json) preserves 20 polynomial coefficient expressions for each film, both original cubic vectors, SHA-256 for each source, camera and rotation parameters.
 
-We found 10 movies driven by rotation alone and 44 movies with time-dependent polynomial coefficients. Several remaining examples have constant equations but other time-dependent scene motions.
+We found 10 films driven by object rotation alone and 44 films with time-dependent polynomial coefficients. Every source scene also has explicit camera and lighting settings.
 
 ## POV-Ray cubic coefficient order
 
