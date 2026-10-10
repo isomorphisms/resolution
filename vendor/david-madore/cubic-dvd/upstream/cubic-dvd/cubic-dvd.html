@@ -1,0 +1,695 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+
+<head>
+
+<title>The Cubic Surfaces DVD</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<meta http-equiv="Content-Language" content="en" />
+
+<style type="text/css">
+
+body {
+  background-color: rgb(0,19,144);
+  color: white;
+  font-family: "FreeSans", Helvetica, Arial, sans-serif;
+  text-align: justify;
+}
+
+.blob {
+  background-color: rgb(163,171,227);
+  color: black;
+  padding-left: 1em;
+  padding-right: 1em;
+  border: solid;
+  border-color: rgb(0,254,172);
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+#title-blob {
+  background-color: rgb(163,171,227);
+  background-image: url("background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(255,0,0);
+  font-family: "FreeSerif", "Times Roman", Times, "Times New Roman", serif;
+  font-size: 3em;
+}
+
+.subtitle {
+  text-align: center;
+  font-family: "FreeSerif", "Times Roman", Times, "Times New Roman", serif;
+  font-size: 2em;
+}
+
+h2 {
+  color: rgb(0,19,144);
+  font-family: "FreeSerif", "Times Roman", Times, "Times New Roman", serif;
+  font-size: 2em;
+}
+
+.sidenote { font-size: .83em; }
+
+a { text-decoration: none; }
+:link,:visited { color: rgb(0,0,192); }
+:link:hover,:visited:hover { text-decoration: underline; }
+
+</style>
+
+</head>
+
+
+<body>
+
+<div id="title-blob" class="blob">
+
+<h1>The <cite>Cubic Surfaces</cite> <abbr>DVD</abbr></h1>
+
+<p class="subtitle">by <a href="http://www.madore.org/~david/">David
+A. Madore</a></p>
+
+</div>
+
+<div id="whatsthis-blob" class="blob">
+
+<h2 id="whatsthis">What is this?</h2>
+
+<p>The <cite>Cubic Surfaces</cite> <abbr>DVD</abbr> is a series of
+computer-generated <a href="#animations">animations</a> (54 in total)
+displaying cubic surfaces and deformations thereof.  It was created to
+help better visualize what cubic surfaces look like and what their
+singular points can be: it tries to be of both mathematical interest
+and artistic value.</p>
+
+<p>The <abbr>DVD</abbr> <acronym>ISO</acronym> image is <a
+href="#iso">available for download</a> from this page, and the
+individual animations can also be <a href="#animations">downloaded</a>
+separately.</p>
+
+<p>For some mathematical generalities about cubic surfaces, please
+consult <a
+href="http://www-groups.dcs.st-and.ac.uk/~history/HistTopics/Cubic_surfaces.html">this
+historical article</a>, <a
+href="http://mathworld.wolfram.com/CubicSurface.html">this MathWorld
+article</a> and <a
+href="http://en.wikipedia.org/wiki/Cubic_surface">this Wikipedia
+article</a>.  Further information can be found in Yuri Manin
+(&#x42e;&#x440;&#x438;&#x439;
+&#x418;&#x432;&#x430;&#x43d;&#x43e;&#x432;&#x438;&#x447;
+&#x41c;&#x430;&#x43d;&#x438;&#x43d;)'s classic book, <cite>Cubic
+Forms: Algebra, Geometry, Arithmetic</cite> (North-Holland: 1974;
+second enlarged edition 1986 <abbr>ISBN</abbr> <a
+href="http://en.wikipedia.org/wiki/Special:Booksources?isbn=0-444-87823-8">0-444-87823-8</a>).
+Of related interest is <a
+href="http://www.madore.org/~david/.misc/cayley-cubic-surfaces.pdf"
+xml:lang="en">Arthur Cayley's historical <q>Memoir on Cubic
+Surfaces</q> (<cite>Phil. Trans. R. Soc. London</cite>, <b>159</b>
+(1869), 231&ndash;326)</a> classifying all possible singular loci.
+The <abbr>DVD</abbr> author's <a
+href="http://www.dma.ens.fr/~madore/thesis.pdf">doctoral
+dissertation</a> also pertains to cubic (hyper)surfaces.</p>
+
+<p>(Of course, you don't need to know any mathematics just to watch
+the animations!)</p>
+
+<p>The <abbr>DVD</abbr> animations were computed using the <a
+href="http://www.povray.org/"><cite>Persistence of Vision</cite>
+raytracer</a> (on a <abbr>PC</abbr> runing the <a
+href="http://www.debian.org/">Debian <acronym>GNU</acronym>/Linux</a>
+operating system).  Their <a href="#source">source code</a> is also
+made available for download (although it might be hard to make
+anything useful of).</p>
+
+<p>The entire contents of the <abbr>DVD</abbr> and its source code and
+related material (including this Web page) are placed in the <a
+href="http://en.wikipedia.org/wiki/Public_domain"><em>Public
+Domain</em></a> by the author (<a
+href="http://www.madore.org/~david/">David A. Madore</a>): they can be
+copied or reused at will and for any purpose whatsoever.  However, I
+would appreciate getting some recognition for my work: so, please cite
+me as the original author of this <abbr>DVD</abbr> if you like it.</p>
+
+</div>
+
+<div class="blob">
+
+<h2 id="iso">The <abbr>DVD</abbr></h2>
+
+<div style="float: left; margin-right: 1em; margin-bottom: 1em"><img
+src="menu-1-small.png" alt="[Snapshot]" title="DVD menu snapshot"
+width="180" height="144" /></div>
+
+<h3>Downloading it</h3>
+
+<p>To save server bandwidth, the <abbr>DVD</abbr>
+<acronym>ISO</acronym> image for burning is made available as a <a
+href="http://en.wikipedia.org/wiki/BitTorrent">bit torrent</a>: you
+will need a program such as <a
+href="http://www.bittorrent.com/download.myt">BitTorrent</a> or <a
+href="http://azureus.sourceforge.net/">Azureus</a> to download it.
+Once you have BitTorrent (or some other similar program) installed,
+please give it the following link to download the image:</p>
+
+<p style="text-align: center; font-weight: bold"><a
+href="ISO/cubic-dvd.iso.torrent">download link for the
+<abbr>DVD</abbr> (bit torrent file)</a></p>
+
+<p>If you absolutely cannot use BitTorrent (e.g., if you are behind a
+fascist firewall that blocks the bit torrent protocol because it is a
+form of peer-to-peer), try downloading the previous link without the
+final <code>.torrent</code> extension in the address: this will fetch
+the image directly from the server.</p>
+
+<p>The <acronym>ISO</acronym> image is 610MB in size.</p>
+
+<h3>Burning it</h3>
+
+<p>Once you have the <acronym>ISO</acronym> image downloaded (it
+should be called <code>cubic-dvd.iso</code>), you should use some
+<abbr>DVD</abbr> burning software to rip it.  Make sure you burn the
+image as a raw <acronym>ISO</acronym>-9660 image, <em>do not</em> copy
+this as a file on a <abbr>DVD</abbr> (it is <em>already</em> a
+<abbr>DVD</abbr> image, not a file to be included on a
+<abbr>DVD</abbr> image!).  Under Linux (or some other Unixen), for
+example, one might use a command line such as: <code>nice --18
+growisofs -dvd-compat -speed=4 -Z /dev/dvd=cubic-dvd.iso</code>.
+Under Windows, <a
+href="http://www.debian.org/CD/faq/#record-windows">these
+instructions</a> might be of some help (though they pertain to burning
+<abbr>CD</abbr>'s, I imagine that burning <abbr>DVD</abbr>'s has much
+in common).  Under Mac&nbsp;OS&nbsp;X, select <q>Image</q> then
+<q>Burn Image</q> in the <cite>Disk Copy</cite> application.</p>
+
+<p>For maximal compatibility with certain standalone <abbr>DVD</abbr>
+players, it might be preferable to use a <abbr>DVD</abbr>&minus;R (as
+opposed to <abbr>DVD</abbr>+R or <abbr>DVD</abbr>&plusmn;RW) medium.
+This is not universally true, however (in fact, I have observed the
+opposite); and, of course, the medium must be appropriate for the
+recording drive.  Since the image is small enough to fit on a
+<abbr>CD</abbr>, you can try <a
+href="http://en.wikipedia.org/wiki/MiniDVD#mini-DVD">using that
+medium</a> instead of a <abbr>DVD</abbr> (but again, make sure to burn
+an <acronym>ISO</acronym> image, not a <abbr>CD</abbr> containing a
+single file): this might work on certain players, but it generally
+will not.  Your mileage may vary.</p>
+
+<h3>Buying it</h3>
+
+<p>&#x2731;&nbsp;If you don't feel like downloading and burning the
+<abbr>DVD</abbr> yourself, you can also <a
+href="http://www.ikarios.com/p641-Cubic_Surfaces_DVD.html"
+style="font-weight: bold">buy it online</a> for 4&euro;, thanks to <a
+href="http://www.ikarios.com/">Ikarios</a> (with whom I am not
+affiliated, nor do I get any profit from the sales!).  Make sure to
+get the most recent version, though (currently, 2006-10-22).  This is
+mostly convenient in France, although they will also ship to other
+countries.</p>
+
+<h3>Notes on the disc's content</h3>
+
+<p>The videos on the <abbr>DVD</abbr> are in the <a
+href="http://en.wikipedia.org/wiki/PAL"><acronym>PAL</acronym>
+format</a> (720&times;576, 25 frames per second) which is common in
+Europe.  Hopefully this should not make it difficult to view the
+<abbr>DVD</abbr> elsewhere in the World.  Naturally, the image is not
+region-encoded, copy-protected or content-scrambled in any way.</p>
+
+<p>Once you select a video from the <abbr>DVD</abbr> menu, it will
+loop forever: use the buttons on your remote control to return to the
+menu.  To play each video for one minute, in order, highlight the
+title in the <abbr>DVD</abbr> menu (this is only valid starting from
+version 2006-10-22 of the disc): then you can use your remote control
+to switch chapters.</p>
+
+<p class="sidenote">The version described on this page is that of
+2006-10-22.  A previous version was released on 2006-10-16.  Version
+2006-10-22 has the same videos, but differs in the following aspects:
+a bug was fixed which caused the highlight in the menus not to be
+visible on certain standalone <abbr>DVD</abbr> players, a title (and
+indication of author's name) was added in the intro sequence, and the
+possibility was added of viewing all videos sequentially.</p>
+
+<p>I plan to make a new version of the <abbr>DVD</abbr>, with optional
+subtitles describing each animation, possibly some time in the future.
+For the moment, there are no comments whatsoever: please refer to <a
+href="#animations">the list below</a> for a very short description of
+each animation.</p>
+
+<div style="clear: left"><!-- EMPTY --></div>
+
+</div>
+
+<div class="blob">
+
+<h2 id="animations">The animations</h2>
+
+<p>Each of the following is a link to one of the animations of which
+the four thumbnail images are taken.  Each is a twelve-second
+sequence, encoded as an <abbr>MPEG</abbr>2 file roughly 2MB in size
+(on the average), and which is meant to be played in a loop.  If you
+don't know what program to use to view animation files, you could try,
+for example, <a
+href="http://www.videolan.org/"><abbr>VLC</abbr></a>.</p>
+
+<p>An explanation might be useful, especially for those who aren't
+algebraic geometers, concerning the use of the phrase <q>deformation
+of <var>foo</var> to <var>bar</var></q> in the descriptions below:
+this means that <em>most</em> frames of the animation represent
+<var>bar</var>, and only one (or perhaps two, or some small number)
+represent <var>foo</var>.  For example, <q>deformation of an E6
+singularity to a D5 singularity</q> means that you mostly see a D5
+singularity (<q><var>bar</var></q>) which for one moment becomes an E6
+singularity (<q><var>foo</var></q>) and then back to D5, and <em>not
+the other way around</em>: yes, I know this is counterintuitive, but I
+chose to place the specialization (<var>foo</var>) not at the very
+beginning of the animation so as to make it more clearly visible.  It
+is always exactly 3 seconds (75 frames) from the start, and it is also
+the <em>third</em> thumbnail image in the list below.</p>
+
+<p>Note that no matter how the surface deforms or rotates, it is
+always lit in the same way: a green light source is directly above, a
+red one is above and slightly to the right, and a blue one is directly
+below.  This never changes.  The surface itself is colorless, only the
+light sources (and reflections) account for the colors.  Another thing
+is that, to prevent it from going off to infinity, the surface is
+intersected with a fixed sphere (always the same), which provides for
+the smooth borders.</p>
+
+<p>Here is the list of all (54) animations:</p>
+
+<div style="text-align: left">
+
+<p><a href="ANIM/01s01a.short.mpg"><img src="THUMBNAILS/01s01aTHB1.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/01s01aTHB2.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/01s01aTHB3.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/01s01aTHB4.png"
+alt="" width="90" height="72" /> A smooth surface (simple
+rotation).</a></p>
+
+<p><a href="ANIM/01s02a.short.mpg"><img src="THUMBNAILS/01s02aTHB1.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/01s02aTHB2.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/01s02aTHB3.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/01s02aTHB4.png"
+alt="" width="90" height="72" /> A smooth surface (more complex
+rotation).</a></p>
+
+<p><a href="ANIM/01s03a.short.mpg"><img src="THUMBNAILS/01s03aTHB1.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/01s03aTHB2.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/01s03aTHB3.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/01s03aTHB4.png"
+alt="" width="90" height="72" /> Deformation of a conic point
+to a smooth surface.</a></p>
+
+<p><a href="ANIM/02s01a.short.mpg"><img src="THUMBNAILS/02s01aTHB1.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/02s01aTHB2.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/02s01aTHB3.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/02s01aTHB4.png"
+alt="" width="90" height="72" /> The Clebsch (smooth) cubic (simple
+rotation).</a></p>
+
+<p><a href="ANIM/03s01a.short.mpg"><img src="THUMBNAILS/03s01aTHB1.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/03s01aTHB2.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/03s01aTHB3.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/03s01aTHB4.png"
+alt="" width="90" height="72" /> An E6 singularity (simple
+rotation).</a></p>
+
+<p><a href="ANIM/03s02a.short.mpg"><img src="THUMBNAILS/03s02aTHB1.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/03s02aTHB2.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/03s02aTHB3.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/03s02aTHB4.png"
+alt="" width="90" height="72" /> Deformation of an E6
+singularity to two A2 singularities.</a></p>
+
+<p><a href="ANIM/03s03a.short.mpg"><img src="THUMBNAILS/03s03aTHB1.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/03s03aTHB2.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/03s03aTHB3.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/03s03aTHB4.png"
+alt="" width="90" height="72" /> Deformation of an E6
+singularity to a D5 singularity.</a></p>
+
+<p><a href="ANIM/03s04a.short.mpg"><img src="THUMBNAILS/03s04aTHB1.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/03s04aTHB2.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/03s04aTHB3.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/03s04aTHB4.png"
+alt="" width="90" height="72" /> Deformation of an E6
+singularity to a D4 singularity.</a></p>
+
+<p><a href="ANIM/04s01a.short.mpg"><img src="THUMBNAILS/04s01aTHB1.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/04s01aTHB2.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/04s01aTHB3.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/04s01aTHB4.png"
+alt="" width="90" height="72" /> Whitney's <cite>Umbrella</cite> (a
+line of singular points) (simple rotation).</a></p>
+
+<p><a href="ANIM/04s02a.short.mpg"><img src="THUMBNAILS/04s02aTHB1.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/04s02aTHB2.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/04s02aTHB3.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/04s02aTHB4.png"
+alt="" width="90" height="72" /> Deformation of Whitney's
+<cite>Umbrella</cite> to a smooth surface.</a></p>
+
+<p><a href="ANIM/04s03a.short.mpg"><img src="THUMBNAILS/04s03aTHB1.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/04s03aTHB2.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/04s03aTHB3.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/04s03aTHB4.png"
+alt="" width="90" height="72" /> Deformation of Whitney's
+<cite>Umbrella</cite> to two A1 singularities.</a></p>
+
+<p><a href="ANIM/04s04a.short.mpg"><img src="THUMBNAILS/04s04aTHB1.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/04s04aTHB2.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/04s04aTHB3.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/04s04aTHB4.png"
+alt="" width="90" height="72" /> Deformation of Whitney's
+<cite>Umbrella</cite> to an A3 singularity.</a></p>
+
+<p><a href="ANIM/05s01a.short.mpg"><img src="THUMBNAILS/05s01aTHB1.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/05s01aTHB2.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/05s01aTHB3.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/05s01aTHB4.png"
+alt="" width="90" height="72" /> Deformation of three planes to a
+smooth surface.</a></p>
+
+<p><a href="ANIM/06s01a.short.mpg"><img src="THUMBNAILS/06s01aTHB1.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/06s01aTHB2.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/06s01aTHB3.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/06s01aTHB4.png"
+alt="" width="90" height="72" /> Deformation of three planes to the
+Cayley cubic surface (having four A1 singularities).</a></p>
+
+<p><a href="ANIM/06s02a.short.mpg"><img src="THUMBNAILS/06s02aTHB1.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/06s02aTHB2.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/06s02aTHB3.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/06s02aTHB4.png"
+alt="" width="90" height="72" /> The Cayley cubic surface (having four
+A1 singularities) (simple rotation).</a></p>
+
+<p><a href="ANIM/06s03a.short.mpg"><img src="THUMBNAILS/06s03aTHB1.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/06s03aTHB2.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/06s03aTHB3.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/06s03aTHB4.png"
+alt="" width="90" height="72" /> Deformation of the Cayley cubic
+surface (having four A1 singularities) or of a single A1 singularity
+(with conjugate planes) to a smooth surface.</a></p>
+
+<p><a href="ANIM/07s01a.short.mpg"><img src="THUMBNAILS/07s01aTHB1.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/07s01aTHB2.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/07s01aTHB3.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/07s01aTHB4.png"
+alt="" width="90" height="72" /> Deformation of a single A2
+singularity (with conjugate planes) to a smooth surface.</a></p>
+
+<p><a href="ANIM/07s02a.short.mpg"><img src="THUMBNAILS/07s02aTHB1.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/07s02aTHB2.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/07s02aTHB3.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/07s02aTHB4.png"
+alt="" width="90" height="72" /> Deformation of a single A2
+singularity (with conjugate planes) to an A1 singularity.</a></p>
+
+<p><a href="ANIM/07s03a.short.mpg"><img src="THUMBNAILS/07s03aTHB1.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/07s03aTHB2.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/07s03aTHB3.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/07s03aTHB4.png"
+alt="" width="90" height="72" /> Deformation of a cone with a line of
+singular points to an A2 singularity.</a></p>
+
+<p><a href="ANIM/08s01a.short.mpg"><img src="THUMBNAILS/08s01aTHB1.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/08s01aTHB2.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/08s01aTHB3.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/08s01aTHB4.png"
+alt="" width="90" height="72" /> Three A2 singularities (with real
+planes).</a></p>
+
+<p><a href="ANIM/08s02a.short.mpg"><img src="THUMBNAILS/08s02aTHB1.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/08s02aTHB2.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/08s02aTHB3.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/08s02aTHB4.png"
+alt="" width="90" height="72" /> Deformation of three A2 singularities
+(with real planes) to a smooth surface.</a></p>
+
+<p><a href="ANIM/08s03a.short.mpg"><img src="THUMBNAILS/08s03aTHB1.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/08s03aTHB2.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/08s03aTHB3.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/08s03aTHB4.png"
+alt="" width="90" height="72" /> Deformation of three A2 singularities
+(with real planes) to three A1 singularities.</a></p>
+
+<p><a href="ANIM/09s01a.short.mpg"><img src="THUMBNAILS/09s01aTHB1.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/09s01aTHB2.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/09s01aTHB3.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/09s01aTHB4.png"
+alt="" width="90" height="72" /> Deformation of a conic point to a D4
+singularity.</a></p>
+
+<p><a href="ANIM/10s01a.short.mpg"><img src="THUMBNAILS/10s01aTHB1.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/10s01aTHB2.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/10s01aTHB3.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/10s01aTHB4.png"
+alt="" width="90" height="72" /> Deformation of a D4 singularity to
+three A1 singularities.</a></p>
+
+<p><a href="ANIM/10s02a.short.mpg"><img src="THUMBNAILS/10s02aTHB1.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/10s02aTHB2.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/10s02aTHB3.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/10s02aTHB4.png"
+alt="" width="90" height="72" /> Deformation of a D4 singularity to a
+smooth surface.</a></p>
+
+<p><a href="ANIM/11s01a.short.mpg"><img src="THUMBNAILS/11s01aTHB1.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/11s01aTHB2.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/11s01aTHB3.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/11s01aTHB4.png"
+alt="" width="90" height="72" /> An A5 singularity (simple
+rotation).</a></p>
+
+<p><a href="ANIM/11s02a.short.mpg"><img src="THUMBNAILS/11s02aTHB1.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/11s02aTHB2.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/11s02aTHB3.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/11s02aTHB4.png"
+alt="" width="90" height="72" /> Deformation of an A5
+singularity (as such).</a></p>
+
+<p><a href="ANIM/11s03a.short.mpg"><img src="THUMBNAILS/11s03aTHB1.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/11s03aTHB2.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/11s03aTHB3.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/11s03aTHB4.png"
+alt="" width="90" height="72" /> Deformation of an E6
+singularity to an A5 singularity.</a></p>
+
+<p><a href="ANIM/11s04a.short.mpg"><img src="THUMBNAILS/11s04aTHB1.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/11s04aTHB2.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/11s04aTHB3.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/11s04aTHB4.png"
+alt="" width="90" height="72" /> Deformation of a reducible surface
+(union of a plane and a sphere) to an A5 singularity.</a></p>
+
+<p><a href="ANIM/11s05a.short.mpg"><img src="THUMBNAILS/11s05aTHB1.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/11s05aTHB2.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/11s05aTHB3.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/11s05aTHB4.png"
+alt="" width="90" height="72" /> Deformation of an A5 singularity to
+two A2 singularities.</a></p>
+
+<p><a href="ANIM/11s06a.short.mpg"><img src="THUMBNAILS/11s06aTHB1.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/11s06aTHB2.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/11s06aTHB3.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/11s06aTHB4.png"
+alt="" width="90" height="72" /> Deformation of an A5 singularity to
+an A4 singularity.</a></p>
+
+<p><a href="ANIM/12s01a.short.mpg"><img src="THUMBNAILS/12s01aTHB1.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/12s01aTHB2.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/12s01aTHB3.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/12s01aTHB4.png"
+alt="" width="90" height="72" /> Deformation of an A3 singularity
+(with conjugate planes) to an A2 singularity.</a></p>
+
+<p><a href="ANIM/13s01a.short.mpg"><img src="THUMBNAILS/13s01aTHB1.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/13s01aTHB2.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/13s01aTHB3.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/13s01aTHB4.png"
+alt="" width="90" height="72" /> Deformation of a reducible surface
+(union of a plane and a sphere) to a smooth surface.</a></p>
+
+<p><a href="ANIM/13s02a.short.mpg"><img src="THUMBNAILS/13s02aTHB1.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/13s02aTHB2.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/13s02aTHB3.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/13s02aTHB4.png"
+alt="" width="90" height="72" /> Deformation of a reducible surface
+(union of a plane and a sphere) to a smooth surface.</a></p>
+
+<p><a href="ANIM/13s03a.short.mpg"><img src="THUMBNAILS/13s03aTHB1.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/13s03aTHB2.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/13s03aTHB3.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/13s03aTHB4.png"
+alt="" width="90" height="72" /> Deformation of a reducible surface
+(union of a plane and a sphere) to a smooth surface.</a></p>
+
+<p><a href="ANIM/14s01a.short.mpg"><img src="THUMBNAILS/14s01aTHB1.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/14s01aTHB2.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/14s01aTHB3.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/14s01aTHB4.png"
+alt="" width="90" height="72" /> Deformation of a twist of the Cayley
+cubic surface (having four A1 singularities) to a smooth
+surface.</a></p>
+
+<p><a href="ANIM/15s01a.short.mpg"><img src="THUMBNAILS/15s01aTHB1.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/15s01aTHB2.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/15s01aTHB3.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/15s01aTHB4.png"
+alt="" width="90" height="72" /> Two A2 singularities (with real
+planes) (simple rotation).</a></p>
+
+<p><a href="ANIM/15s02a.short.mpg"><img src="THUMBNAILS/15s02aTHB1.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/15s02aTHB2.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/15s02aTHB3.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/15s02aTHB4.png"
+alt="" width="90" height="72" /> Deformation of two A2 singularities
+(with real planes) to two A1 singularities.</a></p>
+
+<p><a href="ANIM/16s01a.short.mpg"><img src="THUMBNAILS/16s01aTHB1.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/16s01aTHB2.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/16s01aTHB3.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/16s01aTHB4.png"
+alt="" width="90" height="72" /> Deformation of an A3 singularity
+(with real planes) to an A2 singularity.</a></p>
+
+<p><a href="ANIM/17s01a.short.mpg"><img src="THUMBNAILS/17s01aTHB1.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/17s01aTHB2.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/17s01aTHB3.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/17s01aTHB4.png"
+alt="" width="90" height="72" /> Deformation of a line of singular
+points to a D4 singularity.</a></p>
+
+<p><a href="ANIM/17s02a.short.mpg"><img src="THUMBNAILS/17s02aTHB1.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/17s02aTHB2.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/17s02aTHB3.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/17s02aTHB4.png"
+alt="" width="90" height="72" /> Deformation of a line of singular
+points to an E6 singularity.</a></p>
+
+<p><a href="ANIM/18s01a.short.mpg"><img src="THUMBNAILS/18s01aTHB1.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/18s01aTHB2.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/18s01aTHB3.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/18s01aTHB4.png"
+alt="" width="90" height="72" /> Deformation of an A1 singularity
+(through various stages).</a></p>
+
+<p><a href="ANIM/19s01a.short.mpg"><img src="THUMBNAILS/19s01aTHB1.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/19s01aTHB2.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/19s01aTHB3.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/19s01aTHB4.png"
+alt="" width="90" height="72" /> Deformation of an A2 singularity
+(with real planes) (through various stages).</a></p>
+
+<p><a href="ANIM/19s02a.short.mpg"><img src="THUMBNAILS/19s02aTHB1.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/19s02aTHB2.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/19s02aTHB3.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/19s02aTHB4.png"
+alt="" width="90" height="72" /> Deformation of an A2 singularity
+(with real planes) to an A1 singularity.</a></p>
+
+<p><a href="ANIM/20s01a.short.mpg"><img src="THUMBNAILS/20s01aTHB1.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/20s01aTHB2.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/20s01aTHB3.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/20s01aTHB4.png"
+alt="" width="90" height="72" /> Deformation of an A2 singularity
+(with conjugate planes) (through various stages).</a></p>
+
+<p><a href="ANIM/20s02a.short.mpg"><img src="THUMBNAILS/20s02aTHB1.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/20s02aTHB2.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/20s02aTHB3.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/20s02aTHB4.png"
+alt="" width="90" height="72" /> Deformation of an A2 singularity
+(with conjugate planes) to an A1 singularity.</a></p>
+
+<p><a href="ANIM/21s01a.short.mpg"><img src="THUMBNAILS/21s01aTHB1.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/21s01aTHB2.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/21s01aTHB3.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/21s01aTHB4.png"
+alt="" width="90" height="72" /> An A4 singularity (simple
+rotation).</a></p>
+
+<p><a href="ANIM/21s02a.short.mpg"><img src="THUMBNAILS/21s02aTHB1.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/21s02aTHB2.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/21s02aTHB3.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/21s02aTHB4.png"
+alt="" width="90" height="72" /> Deformation of an A4
+singularity (as such).</a></p>
+
+<p><a href="ANIM/21s03a.short.mpg"><img src="THUMBNAILS/21s03aTHB1.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/21s03aTHB2.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/21s03aTHB3.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/21s03aTHB4.png"
+alt="" width="90" height="72" /> Deformation of a D5
+singularity to an A4 singularity.</a></p>
+
+<p><a href="ANIM/21s04a.short.mpg"><img src="THUMBNAILS/21s04aTHB1.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/21s04aTHB2.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/21s04aTHB3.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/21s04aTHB4.png"
+alt="" width="90" height="72" /> Deformation of a reducible surface
+(union of a plane and a sphere) to an A4 singularity.</a></p>
+
+<p><a href="ANIM/21s05a.short.mpg"><img src="THUMBNAILS/21s05aTHB1.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/21s05aTHB2.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/21s05aTHB3.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/21s05aTHB4.png"
+alt="" width="90" height="72" /> Deformation of an A4 singularity to
+two A2 singularities.</a></p>
+
+<p><a href="ANIM/99s01a.short.mpg"><img src="THUMBNAILS/99s01aTHB1.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/99s01aTHB2.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/99s01aTHB3.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/99s01aTHB4.png"
+alt="" width="90" height="72" /> A random cubic surface
+deformation.</a></p>
+
+<p><a href="ANIM/99s02a.short.mpg"><img src="THUMBNAILS/99s02aTHB1.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/99s02aTHB2.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/99s02aTHB3.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/99s02aTHB4.png"
+alt="" width="90" height="72" /> A random cubic surface
+deformation.</a></p>
+
+<p><a href="ANIM/99s03a.short.mpg"><img src="THUMBNAILS/99s03aTHB1.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/99s03aTHB2.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/99s03aTHB3.png"
+alt="" width="90" height="72" /><img src="THUMBNAILS/99s03aTHB4.png"
+alt="" width="90" height="72" /> A random cubic surface
+deformation.</a></p>
+
+</div>
+
+</div>
+
+<div class="blob">
+
+<h2 id="source">The source code</h2>
+
+<p>The source code for the <cite>Cubic Surfaces</cite>
+<abbr>DVD</abbr> is available for <a
+href="SOURCE/cubic-dvd.tar.gz">download</a> (it's a standard Unix
+gzipped tarball, and it's meant for various flavours of Unixen).  I'm
+also including it on the <abbr>DVD</abbr> itself.  It might be hard to
+make anything useful of, however, since it is just a raw dump of my
+working directory and I haven't recorded every command line I typed.
+I'm afraid I don't have the time to explain how to create a
+<abbr>DVD</abbr> image from this source: you'll have to figure it out
+yourself.  So, do what you will with this.  Enjoy!</p>
+
+</div>
+
+</body>
+</html>

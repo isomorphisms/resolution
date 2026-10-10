@@ -1,0 +1,18 @@
+#! /bin/sh
+
+perl -e 'for ($i=0;$i<60;$i++) { system(sprintf("convert intro%02d.png -font Palatino-Bold -fill red -pointsize 72 -draw \"gravity Center text 0,0 \\\"Cubic Surfaces\\\"\" -font Palatino-Italic -fill yellow -pointsize 56 -draw \"gravity Center text 0,72 \\\"David A. Madore\\\"\" introFRM%04d.png",$i+1,$i)); }'
+
+png2yuv -v 1 -f 25 -I p -j "introFRM%04d.png" | \
+mpeg2enc -v 1 -f 8 -a 2 -q 4 -o "intro.m2v"
+
+rm -f "introFRM"*.png
+
+if [ -e /tmp/intro-silence.ac3 ]; then
+    :
+else
+    ffmpeg -ab 64 -ar 48000 -ac 2 -t 2.4 /tmp/intro-silence.ac3
+fi
+
+mplex -f8 -o "intro.mpg" "intro.m2v" /tmp/intro-silence.ac3
+
+rm -f "intro.m2v"

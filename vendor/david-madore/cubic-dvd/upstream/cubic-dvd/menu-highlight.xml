@@ -1,0 +1,10 @@
+<subpictures>
+  <stream>
+    <spu start="00:00:00.0"
+         highlight="menu-highlight.png"
+         select="menu-select.png"
+         force="yes"
+         autooutline="infer"
+         autoorder="rows"/>
+  </stream>
+</subpictures>

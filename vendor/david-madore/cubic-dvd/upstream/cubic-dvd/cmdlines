@@ -1,0 +1,7 @@
+for mov in ... ; do mkdir -p /data4/cubic-dvd/FRAMES/$mov ; cd /data4/cubic-dvd/FRAMES/$mov ; dchroot -d -c 32 povray +I$HOME/cubic-dvd/${mov}.pov $HOME/cubic-dvd/animation.ini ; $HOME/cubic-dvd/makeanim ${mov} ; mv ${mov}.mpg /data4/cubic-dvd/MPEG ; mv ${mov}.short.mpg /data4/cubic-dvd/ANIM ; cd .. ; done
+
+dvdauthor -x ~/cubic-dvd/dvd.xml ; tar -C $HOME -c cubic-dvd | gzip -9 > SOURCE/cubic-dvd.tar.gz ; mkdir DVD/SOURCE ; cp -a SOURCE/cubic-dvd.tar.gz DVD/SOURCE/SOURCE.TGZ
+
+mkisofs -V 'CUBIC SURFACES YYYY-MM-DD' -publisher 'David A. Madore <david.madore@ens.fr>' -p 'David A. Madore <david.madore@ens.fr>' -dvd-video -o ISO/cubic-dvd.iso DVD/
+
+nice --18 growisofs -dvd-compat -speed=2 -Z /dev/hdb=/data4/cubic-dvd/ISO/cubic-dvd.iso
