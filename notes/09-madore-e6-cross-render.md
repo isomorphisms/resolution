@@ -68,6 +68,15 @@ Defaults for both scripts are **32 real rendered frames**, **320×320**, **16 fp
 
 The validation checks: every expected frame exists; every frame decodes at the requested dimensions; foreground and background are both present; colors vary; at least a third of frames have distinct image hashes; the encoded MP4 decodes to the expected number of frames. These checks demonstrate that a **render took place and camera changed**, *not* a proof of the complex singularity type (which comes from the polynomial computation above).
 
+## Completed rendering evidence (2026-10-09)
+
+Both rendering pipelines actually ran, verified their source inputs, decoded all 32 frames, and published encoded artifacts.
+
+- **Madore's original POV-Ray scene:** 32/32 distinct 320×320 frames, 16 fps, [MP4](../renders/madore-e6/madore-e6-povray.mp4) (79,380 bytes), [GIF](../renders/madore-e6/madore-e6-povray.gif) (457,654 bytes), [PNG](../renders/madore-e6/madore-e6-povray.png), and [evidence](../renders/madore-e6/madore-e6-povray-manifest.json). Source `03s01a.pov` was compared byte-for-byte with the imported archive manifest before rendering.
+- **Christian Stussak / IMAGINARY SURFER/jsurf:** 32/32 distinct 320×320 frames, 16 fps, [MP4](https://github.com/isomorphismes/algebraic-variety-explorer-mobile/blob/feature/madore-e6-orbit/renders/madore-e6/madore-e6-surfer.mp4) (77,619 bytes), [GIF](https://github.com/isomorphismes/algebraic-variety-explorer-mobile/blob/feature/madore-e6-orbit/renders/madore-e6/madore-e6-surfer.gif) (644,000 bytes), [PNG](https://github.com/isomorphismes/algebraic-variety-explorer-mobile/blob/feature/madore-e6-orbit/renders/madore-e6/madore-e6-surfer.png), and [evidence](https://github.com/isomorphismes/algebraic-variety-explorer-mobile/blob/feature/madore-e6-orbit/renders/madore-e6/madore-e6-surfer-manifest.json). The unchanged sphere preview checksum also passed, as did Java renderer tests and the original Android CI smoke checks on the code-changing commit.
+
+A passing movie verifier establishes that frames were actually rendered, contain nontrivial foreground, and vary under rotation. It is not a proof of a full complex surface visualization or an (E_6) resolution map.
+
 ## Source responsibility, credit, and future resolution
 
 **Special thanks to David A. Madore** for the detailed and open mathematical films, fixed-light design, and public-domain source. The original 54-film DVD and source should remain credited even when code is reused indirectly or the graphics are re-rendered.
