@@ -23,7 +23,7 @@ The first target is not merely a rotating implicit surface. It is a film that ke
 
 **[POV-Ray: 32-frame animated GIF](renders/madore-e6/madore-e6-povray.gif)** · [MP4](renders/madore-e6/madore-e6-povray.mp4) · [validation manifest](renders/madore-e6/madore-e6-povray-manifest.json) · [rendering script](scripts/render-madore-e6-povray.sh)
 
-**[SURFER/jsurf: 32-frame animated GIF](https://github.com/isomorphismes/algebraic-variety-explorer-mobile/blob/feature/madore-e6-orbit/renders/madore-e6/madore-e6-surfer.gif)** · [MP4](https://github.com/isomorphismes/algebraic-variety-explorer-mobile/blob/feature/madore-e6-orbit/renders/madore-e6/madore-e6-surfer.mp4) · [SURFER pull request](https://github.com/isomorphismes/algebraic-variety-explorer-mobile/pull/29)
+**[SURFER/jsurf: 32-frame animated GIF](https://github.com/isomorphismes/algebraic-variety-explorer-mobile/blob/surfer/renders/madore-e6/madore-e6-surfer.gif)** · [MP4](https://github.com/isomorphismes/algebraic-variety-explorer-mobile/blob/surfer/renders/madore-e6/madore-e6-surfer.mp4) · [SURFER pull request](https://github.com/isomorphismes/algebraic-variety-explorer-mobile/pull/29)
 
 See [exact derivation and comparison](notes/09-madore-e6-cross-render.md) and [the complete source polynomial atlas for all 54 films](notes/10-madore-source-polynomial-atlas.md).
 
