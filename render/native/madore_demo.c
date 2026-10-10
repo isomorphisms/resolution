@@ -297,8 +297,12 @@ static int render_madore_03s01a(const char *output_directory, FILE *manifest)
         return 0;
     }
 
-    /* Match the original camera direction; projection remains orthographic. */
-    if (!render_surface(path, &surface, M_PI, -atan(0.25))) {
+    /*
+     * Madore rotates the object by +90 degrees at clock 0.25. Moving the
+     * inverse rotation into this fixed-surface camera gives yaw +pi/2. The
+     * projection remains orthographic until the shared camera interface grows.
+     */
+    if (!render_surface(path, &surface, M_PI / 2.0, -atan(0.25))) {
         return 0;
     }
     fprintf(manifest, "madore-03s01a\t75\t0\t%s\n", path);
