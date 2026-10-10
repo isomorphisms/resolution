@@ -95,6 +95,7 @@ A₁ → D₄ → E₈
 - [`notes/06-grassmannian-spectra.md`](notes/06-grassmannian-spectra.md) — Madore's *The sound of some grassmannians*, spectral reconstruction questions, and the distinction between three sonification methods.
 - [`notes/07-e8-voronoi-slices.md`](notes/07-e8-voronoi-slices.md) — Madore's eight-dimensional E₈ Voronoi tessellation shown as moving 2D slices; exact nearest-lattice reconstruction, weighted planar sections, and the limited ADE connection.
 - [`notes/07-david-madore-youtube-channel-map.md`](notes/07-david-madore-youtube-channel-map.md) — thematic map of Madore's mathematical video channel, including singularities, Lie-theoretic sound, E₈ and Weyl-group imagery, waves, four-polytopes, hyperbolic geometry, relativity, and Fourier experiments.
+- [`notes/08-cubic-surfaces-youtube-playlist.md`](notes/08-cubic-surfaces-youtube-playlist.md) — exact 32-video inventory of Madore's *Cubic surfaces* YouTube playlist, linked to his 54-film DVD, with deformation-versus-resolution cautions.
 - [`sources/README.md`](sources/README.md) — source ledger and links into the other repositories.
 - [`papers/README.md`](papers/README.md) — Patrick du Val's original three-part paper and modern guides.
 
