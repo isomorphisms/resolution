@@ -13,6 +13,7 @@ EXPECTED = (
     "a1-frame-150.ppm",
     "a1-frame-225.ppm",
     "cayley-affine.ppm",
+    "madore-03s01a-native.ppm",
 )
 
 
@@ -57,16 +58,19 @@ def main() -> int:
         digests["a1-frame-075.ppm"],
         digests["a1-frame-225.ppm"],
         digests["cayley-affine.ppm"],
+        digests["madore-03s01a-native.ppm"],
     }
-    if len(distinct_images) != 4:
+    if len(distinct_images) != 5:
         raise ValueError(
-            "nearby smooth, singular, maximal deformation, and Cayley frames "
-            "must be distinct"
+            "nearby smooth, singular, maximal deformation, Cayley, and "
+            "Madore 03s01a frames must be distinct"
         )
 
     manifest = (output_directory / "manifest.tsv").read_text(encoding="utf-8")
     if "a1\t75\t0\t" not in manifest:
         raise ValueError("manifest does not mark frame 75 as the singular parameter value")
+    if "madore-03s01a\t75\t0\t" not in manifest:
+        raise ValueError("manifest does not record the adapted Madore scene")
 
     print("native render acceptance: ok")
     for name in EXPECTED:
