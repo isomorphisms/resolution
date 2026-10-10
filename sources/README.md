@@ -166,6 +166,14 @@ Checked points:
 
 Status: **video metadata and description checked; video audio and linked thread not independently transcribed**. The description says the spectra are of real, complex, quaternionic Grassmannians and the octonionic projective plane. Exact amplitude, metric normalization, and synthesis details are still unverified. See [the dedicated note](../notes/06-grassmannian-spectra.md).
 
+### E₈ Voronoi moving cross-sections
+
+- David A. Madore, *Voronoi cells of the E8 lattice: a random three-dimensional cross-section*: https://www.youtube.com/watch?v=VSAnezNAjLg
+- Madore's separate interactive E₈ root-system viewer: https://www.madore.org/~david/math/e8w.html
+- Mathieu Dutour Sikirić, David Madore, Philippe Moustrou, and Frank Vallentin, *Coloring the Voronoi tessellation of lattices*: https://arxiv.org/abs/1907.09751
+
+Status: **video description read**, including 240 Voronoi facets, 19,440 vertices, the 2D-frame/1D-time section, three extra color directions, and midpoint symmetry. **Frames and author source code not independently checked.** The nearest-point and power-diagram method in [07-e8-voronoi-slices.md](../notes/07-e8-voronoi-slices.md) is a mathematical reconstruction, **not a claim about Madore's implementation**. The four-author coloring paper is a related reference, not an identified source for the film's colors.
+
 ## 5. Richard E. Borcherds — an explicit E₈ resolution
 
 - *Algebraic geometry 39: Du Val singularities* (2020):
