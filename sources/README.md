@@ -122,6 +122,13 @@ Status: **author's notes, video description and movie directory read**. The live
 
 See [the detailed geometry and \(E_8\)-link notes](../notes/06-david-madore-s3-polytopes.md). Do **not** attribute the proposed resolution-movie extension to Madore; he made spherical-navigation films, not that extension.
 
+### Individual DVD video: `A₅ → A₄`
+
+- David A. Madore, *Cubic surface: deformation of an A5 singularity to an A4 singularity*: https://www.youtube.com/watch?v=VDaEZpKbYqQ
+- Entry 31 of 54 on the DVD index. The video description identifies the special `A₅` surface at 3 s and 9 s; most of the loop shows `A₄`.
+- A local `uv+w^6+t w^5=0` model is a **separate illustrative calculation** in [the Madore note](../notes/03-david-madore.md), not the verified cubic equation in the video.
+- Status: **video title/description and Madore's DVD index checked; video frames and original POV-Ray source not independently examined**.
+
 ### Character sounds
 
 - *Sons et graphes de caractères de groupes de Lie*
