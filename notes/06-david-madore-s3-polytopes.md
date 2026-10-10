@@ -41,26 +41,26 @@ The verified 120-cell video description says that the observer traverses **one c
 
 Let the observer's position be $p\in S^3\subset\mathbb R^4$. Choose a positively oriented orthonormal basis $e_1,e_2,e_3$ of $T_pS^3$. For $q\in S^3$, write
 
-$
+$$
 c = \langle p,q\rangle,\qquad
 u_i = \langle e_i,q\rangle .
-$
+$$
 
 The coordinates in the tangent plane, translated to the origin of the observer's 3-space, are
 
-$
+$$
 G_p(q)=\left(\frac{u_1}{c},\frac{u_2}{c},\frac{u_3}{c}\right),\qquad c\ne0.
-$
+$$
 
 This is **gnomonic** (central) projection, not stereographic projection. On the near hemisphere $c>0$, it sends great-circle arcs to straight Euclidean lines and preserves angles *at the observer*. Hence an ordinary Euclidean raytracer can draw the projected edges. Madore's original script computes POV-Ray input using this geometry.
 
 One-dimensional test: for $p=(1,0,0,0)$, $e_1=(0,1,0,0)$, and $q=(\cos\theta,\sin\theta,0,0)$,
 
-$
+$$
 G_p(q)=(\tan\theta,0,0).
-$
+$$
 
-So the horizon at (	heta=\pi/2) goes to infinity. For the far hemisphere, $c<0$, the coordinates reappear after the horizon with reversed interpretation. Also $G_p(q)=G_p(-q)$: the formula on its own forgets which hemisphere a point inhabits. This is **why geometry and near/far labeling must remain separate inputs**.
+So the horizon at $\theta=\pi/2$ goes to infinity. For the far hemisphere, $c<0$, the coordinates reappear after the horizon with reversed interpretation. Also $G_p(q)=G_p(-q)$: the formula on its own forgets which hemisphere a point inhabits. This is **why geometry and near/far labeling must remain separate inputs**.
 
 In a renderer, preserve the four-dimensional endpoints and an explicit near/far hemisphere tag; split an edge where (c=0) rather than hoping a regular 3D clipping function will handle it. A purely gnomonic view is unbounded at that boundary. Madore's second revision draws distant (“trans”) edges as thin red wireframes, not physically modeled tubes: he explicitly warns that physically correct apparent thickness in that hemisphere would be counterintuitive and was not rendered.
 
@@ -74,16 +74,16 @@ This playlist is **not** another set of singularity-resolution films. Its strong
 
 Consider
 
-$
+$$
 X = \{(x,y,z)\in\mathbb C^3\mid x^2+y^3+z^5=0\}.
-$
+$$
 
 Intersect $X$ with a sufficiently small ordinary $S^5$ in (mathbb C^3). The result is a real **3-manifold**, the link $L_{E_8}$. Up to diffeomorphism,
 
-$
+$$
 L_{E_8} \cong \Sigma(2,3,5)
 \cong S^3/2I,
-$
+$$
 
 where $2I\subset SU(2)\cong S^3$ is the binary icosahedral group of order 120. The quotient is the **Poincaré homology 3-sphere**. It can also be constructed by identifying the paired faces of a single dodecahedron with the appropriate twist.
 
