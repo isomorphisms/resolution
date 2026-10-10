@@ -58,7 +58,7 @@ h_q(τ)² = ||(I − uuᵀ − vvᵀ)(q−a−τw)||²
     = ||(s,t)−c_q(τ)||² + h_q(τ)².
 ```
 
-Hence the section minimizes a planar squared distance **plus a site-dependent weight**. With `w ⟂ u,v`, each projected site `c_q` stays fixed while the weights change as the plane moves. Regions can appear, disappear, split or merge according to the combinatorics of this weighted diagram. These are slicing events, not topological changes in the full 8D tessellation.
+Hence the section minimizes a planar squared distance **plus a site-dependent weight**. With `w ⟂ u,v`, each projected site `c_q` stays fixed while the weights change as the plane moves. Regions can appear, disappear, and gain or lose polygon edges as the weights change; each individual slice of a convex Voronoi cell remains convex, so it cannot split into disconnected pieces. These are slicing events, not topological changes in the full 8D tessellation.
 
 For the origin-centered cell, the 240 roots `r` of squared norm `2` give the facet inequalities
 
