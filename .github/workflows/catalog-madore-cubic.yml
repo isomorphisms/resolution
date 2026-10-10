@@ -1,0 +1,56 @@
+name: Verify and publish Madore 54-film polynomial atlas
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/catalog-madore-cubic.yml
+      - scripts/catalog-madore-cubic.py
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  exact-original-polynomials:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Check out source archive and script
+        uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09
+        with:
+          ref: ${{ github.ref_name }}
+          persist-credentials: true
+
+      - name: Extract and verify 54 original polynomial coefficient families
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m py_compile scripts/catalog-madore-cubic.py
+          python3 scripts/catalog-madore-cubic.py
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          data = json.loads(Path('data/madore-cubic-polynomials.json').read_text())
+          assert data['original_film_count'] == 54
+          assert len(data['films']) == 54
+          e6 = next(f for f in data['films'] if f['stem'] == '03s01a')
+          assert e6['polynomial_F'] == 'x^2 + x*z^2 + y^3'
+          assert all(len(f['coefficients_F']) == 20 for f in data['films'])
+          print('Verified 54 original films and the exact E6 equation')
+          PY
+
+      - name: Commit source-verified atlas and JSON coefficients
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- notes/10-madore-source-polynomial-atlas.md \
+            data/madore-cubic-polynomials.json
+          if git diff --cached --quiet; then
+            echo "No source formula changes."
+            exit 0
+          fi
+          git commit -m "Publish verified polynomials for all 54 Madore cubic surface movies"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
