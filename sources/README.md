@@ -102,6 +102,8 @@ Status: **bibliographic record and publisher extracts checked**. The papers them
 
 Status: **primary project page read**, including the complete 54-film index, technical format, deformation timing, lighting, clipping convention, source availability, and public-domain statement.
 
+The linked [*Cubic surfaces* YouTube playlist](https://www.youtube.com/playlist?list=PL1AE045877D932E6A) has **32 verified video-title/ID pairs** in order; see the [complete 32-item index](../notes/08-cubic-surfaces-youtube-playlist.md). Playlist metadata was checked on 2026-10-09. The YouTube clip descriptions include an error for the Cayley cubic: the correct singularities are **four A₁**, not the “four A4” printed in that one description.
+
 The films are deformations, rotations, and real implicit-surface views. They are not footage of minimal resolutions.
 
 ### Spherical 4-polytope navigation films
