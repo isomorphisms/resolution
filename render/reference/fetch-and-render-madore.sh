@@ -92,8 +92,10 @@ if [[ ! -s "$working_output" ]]; then
     exit 5
 fi
 cp "$working_output" "$output_directory/madore-reference.png"
-sha256sum "$output_directory/madore-reference.png" \
-    > "$output_directory/RENDERED_SHA256"
+(
+    cd "$output_directory"
+    sha256sum madore-reference.png > RENDERED_SHA256
+)
 printf 'vendored original Madore scene rendered at clock %s: %s\n' \
     "$exercised_clock" \
     'vendor/david-madore/cubic-dvd/upstream/cubic-dvd/03s01a.pov'
