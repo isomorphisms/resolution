@@ -104,6 +104,24 @@ Status: **primary project page read**, including the complete 54-film index, tec
 
 The films are deformations, rotations, and real implicit-surface views. They are not footage of minimal resolutions.
 
+### Spherical 4-polytope navigation films
+
+- 120-cell/600-cell/24-cell YouTube playlist supplied by the user: https://www.youtube.com/playlist?list=PL09DF17B94CA3C6FD
+- David A. Madore, *Naviguons dans des pavages de la 3-sphère* (2010): http://www.madore.org/~david/weblog/d.2010-11-12.1808.html
+- David A. Madore, *Affichage de l'hémisphère « trans » de la 3-sphère* (2010): http://www.madore.org/~david/weblog/d.2010-11-14.1809.html
+- Original Perl-script description (public domain): http://www.madore.org/~david/programs/programs.html
+- High-quality movie directory with five named AVI files: http://www.madore.org/~david/math/4polytopes/
+
+Status: **author's notes, video description and movie directory read**. The live YouTube playlist's current complete item list, ordering, and the Perl source's direct download URL have not been independently established. Gnomonic projection, the observer's great-circle navigation, and the near/far hemispheres are attributable to Madore.
+
+**The direct mathematical bridge to this repository:** the 120-cell decomposes the universal cover of the Poincaré sphere, which is the link of the \(E_8\) surface singularity and the boundary of its negative-\(E_8\) plumbing. Sources checked:
+
+- **Robion C. Kirby** and **Martin G. Scharlemann**, *Eight Faces of the Poincaré Homology 3-Sphere* (1979): https://math.berkeley.edu/~kirby/papers/Kirby%20and%20Scharlemann%20-%20Eight%20faces%20of%20the%20Poincar%C3%A9%20homology%203-sphere%20-%20MR0537730.pdf
+- **Laurentiu Maxim**, *Notes on Vanishing Cycles and Applications*, Example 2.22: https://people.math.wisc.edu/~maxim/vanishing.pdf
+- **John Stillwell**, *The Story of the 120-Cell*: https://www.ams.org/notices/200101/fea-stillwell.pdf
+
+See [the detailed geometry and \(E_8\)-link notes](../notes/06-david-madore-s3-polytopes.md). Do **not** attribute the proposed resolution-movie extension to Madore; he made spherical-navigation films, not that extension.
+
 ### Character sounds
 
 - *Sons et graphes de caractères de groupes de Lie*
