@@ -86,7 +86,7 @@ The cubic-surface `E₆` examples do not substitute for a full complex-surface `
 
 ## Next concrete source-reading tasks
 
-- Read and inventory **Madore's published POV-Ray source tarball** to pair each of the 54 original films with **exact polynomial families `F_t`**, camera and lighting parameters. This playlist inventory verifies **titles and descriptions only**; it is not a reverse-engineering claim.
+- **Source archive acquired (2026-10-09):** Madore's [original source tarball](../vendor/david-madore/cubic-dvd/original/cubic-dvd.tar.gz) and [94 extracted source/production files](../vendor/david-madore/cubic-dvd/upstream/cubic-dvd/) are now checked into the repository, with a [complete manifest](../vendor/david-madore/cubic-dvd/SOURCE-MANIFEST.json). The remaining *analysis* is to pair each of the 54 films with the exact polynomial families `F_t`, camera and lighting parameters; that inspection has not yet been completed.
 - For selected YouTube videos, inspect the frames at the special instant and the generic instant. Record whether topology changes in the visible real slice rather than inferring complex topology from the image alone.
 - Produce a separate blowup chart ledger for `A₁`, `D₄`, `E₈` using Reid and Borcherds; synchronize the chart, exceptional graph, and projection. Do not label a surface morph as a blowup.
 - Reconcile the **22 additional DVD films** with YouTube publication independently; the playlist may be incomplete, but the DVD has the full descriptions and source.
