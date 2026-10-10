@@ -1,0 +1,64 @@
+name: render acceptance
+
+on:
+  push:
+    paths:
+      - 'render/**'
+      - '.github/workflows/render-acceptance.yml'
+  pull_request:
+    paths:
+      - 'render/**'
+      - '.github/workflows/render-acceptance.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  native-surface-render:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out resolution
+        uses: actions/checkout@v4
+
+      - name: Check out pinned SURFER numerical core
+        uses: actions/checkout@v4
+        with:
+          repository: isomorphismes/algebraic-variety-explorer-mobile
+          ref: 3928dcd1d023baab7c44bb4fc34f0ebe331f6237
+          path: .deps/algebraic-variety-explorer-mobile
+
+      - name: Compile and render native comparison frames
+        run: render/native/build-and-render.sh out/native
+
+      - name: Verify native outputs
+        run: render/native/verify_outputs.py out/native
+
+      - name: Upload native frames and receipts
+        uses: actions/upload-artifact@v4
+        with:
+          name: native-surface-frames
+          path: out/native
+          if-no-files-found: error
+
+  original-madore-povray:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out resolution
+        uses: actions/checkout@v4
+
+      - name: Install POV-Ray
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes povray
+
+      - name: Fetch and render an original Madore scene
+        run: render/reference/fetch-and-render-madore.sh out/madore-reference
+
+      - name: Upload source inventory, logs, and reference frame
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: madore-povray-reference
+          path: out/madore-reference
+          if-no-files-found: warn
