@@ -54,7 +54,7 @@ F₀ = z²(a² + z b³ + z³).
 F₁(a,b,z) = a² + z b³ + z³.
 ```
 
-The strict transform has a residual singular point at `a=b=z=0`. The `x` and `y) charts have smooth strict transforms (for example the `y` chart gives `a²+y+y³c⁵=0`).
+The strict transform has a residual singular point at `a=b=z=0`. The `x` and `y` charts have smooth strict transforms (for example the `y` chart gives `a²+y+y³c⁵=0`).
 
 ### Blowup 2 — b chart at that singular point
 
