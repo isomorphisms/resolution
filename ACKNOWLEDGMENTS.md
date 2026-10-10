@@ -26,7 +26,7 @@ When using a particular animation, cite its exact [playlist entry](notes/08-cubi
 
 ### File-level credit in future rendering source
 
-**Current status:** this repository contains notes and proposed rendering methods; it does **not** yet contain imported Madore POV-Ray source. Do not assert that existing code was copied from him when it was not.
+**Current status (2026-10-09):** **Madore's actual source has now been copied into this repository.** See [the imported, unmodified POV-Ray and production source files](vendor/david-madore/cubic-dvd/upstream/cubic-dvd/) (94 files), the [original source tarball](vendor/david-madore/cubic-dvd/original/cubic-dvd.tar.gz) (3,100,397 bytes), and the [SHA-256/file-by-file manifest](vendor/david-madore/cubic-dvd/SOURCE-MANIFEST.json). The upstream source contents are preserved byte for byte; attribution is prominently attached to their containing directory and the project's documentation. We have not yet adapted or executed those historical sources.
 
 When source code is added, place a comment near the beginning of **every file directly adapted from Madore's published source**, not merely a generic project-wide acknowledgment. Adapt this comment to the programming language and fill in the specific provenance:
 
