@@ -93,6 +93,7 @@ A₁ → D₄ → E₈
 - [`notes/06-david-madore-s3-polytopes.md`](notes/06-david-madore-s3-polytopes.md) — Madore's 120-cell/600-cell spherical navigation movies, gnomonic camera mathematics, original code, and the 120-cell/Poincaré sphere/`E₈`-link connection.
 - [`notes/06-richard-borcherds-du-val.md`](notes/06-richard-borcherds-du-val.md) — Borcherds's E₈ lecture, reconstructed eight-point-blowup chart sequence, residual A₁/D₄ branches, and a distinct process tree for animation.
 - [`notes/06-grassmannian-spectra.md`](notes/06-grassmannian-spectra.md) — Madore's *The sound of some grassmannians*, spectral reconstruction questions, and the distinction between three sonification methods.
+- [`notes/07-madore-youtube-playlist.md`](notes/07-madore-youtube-playlist.md) — complete 20-video *Miscellaneous mathematical* playlist index, with links and specific analysis of `E8` projections, slices, Fourier data, homotopies and wave films.
 - [`notes/07-e8-voronoi-slices.md`](notes/07-e8-voronoi-slices.md) — Madore's eight-dimensional E₈ Voronoi tessellation shown as moving 2D slices; exact nearest-lattice reconstruction, weighted planar sections, and the limited ADE connection.
 - [`sources/README.md`](sources/README.md) — source ledger and links into the other repositories.
 - [`papers/README.md`](papers/README.md) — Patrick du Val's original three-part paper and modern guides.
