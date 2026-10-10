@@ -17,6 +17,7 @@ source_catalog="$source_root/list"
 source_url='http://www.madore.org/cubic-dvd/SOURCE/cubic-dvd.tar.gz'
 expected_archive_sha256='4996b498815783ab8f968022b8720cb5fad02ca8c7a40b82386978e5acdc2528'
 expected_scene_sha256='064429bbdd8f6ebc5d36d49e0c0254edeed597f34643d702ee6cfc7d9cd508c0'
+exercised_clock='0.25'
 
 for required in "$archive" "$source_scene" "$source_catalog"; do
     if [[ ! -f "$required" ]]; then
@@ -32,6 +33,7 @@ printf '%s  cubic-dvd.tar.gz\n' "$actual_archive_sha256" \
     > "$output_directory/SOURCE_SHA256"
 printf '%s  cubic-dvd/03s01a.pov\n' "$actual_scene_sha256" \
     > "$output_directory/SCENE_SHA256"
+printf '%s\n' "$exercised_clock" > "$output_directory/EXERCISED_CLOCK"
 
 if [[ "$actual_archive_sha256" != "$expected_archive_sha256" ]]; then
     printf 'vendored Madore archive hash mismatch: expected %s, got %s\n' \
@@ -65,24 +67,33 @@ if ! cmp -s "$source_scene" "$work_directory/scene/03s01a.pov"; then
     printf 'working scene copy differs from vendored source\n' >&2
     exit 3
 fi
+cat > "$work_directory/scene/clock-probe.pov" <<'POV'
+#debug concat("RESOLUTION_CLOCK=", str(clock, 0, 6), "\n")
+#include "03s01a.pov"
+POV
 
 : > "$output_directory/render.log"
 (
     cd "$work_directory/scene"
     povray \
-        '+I03s01a.pov' \
+        "+K$exercised_clock" \
+        '+Iclock-probe.pov' \
         '+Omadore-reference.png' \
-        +W320 +H240 +FN -D +V +A0.1 \
-        'Clock=0.25'
+        +W320 +H240 +FN -D +V +A0.1
 ) >> "$output_directory/render.log" 2>&1
 
+if ! grep -q 'RESOLUTION_CLOCK=0.250000' "$output_directory/render.log"; then
+    printf 'POV-Ray did not report the requested clock value; inspect render.log\n' >&2
+    exit 4
+fi
 working_output="$work_directory/scene/madore-reference.png"
 if [[ ! -s "$working_output" ]]; then
     printf 'original Madore scene produced no PNG; inspect render.log\n' >&2
-    exit 4
+    exit 5
 fi
 cp "$working_output" "$output_directory/madore-reference.png"
 sha256sum "$output_directory/madore-reference.png" \
     > "$output_directory/RENDERED_SHA256"
-printf 'vendored original Madore scene rendered: %s\n' \
+printf 'vendored original Madore scene rendered at clock %s: %s\n' \
+    "$exercised_clock" \
     'vendor/david-madore/cubic-dvd/upstream/cubic-dvd/03s01a.pov'
