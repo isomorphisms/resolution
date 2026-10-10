@@ -15,6 +15,18 @@ The first target is not merely a rotating implicit surface. It is a film that ke
 3. the sequence of blowups or other birational modifications;
 4. the exceptional curves and their intersection graph on the resolved surface.
 
+## Actual E6 films — POV-Ray and SURFER
+
+**Both films were rendered from the exact cubic** `x² + xz² + y³ = 0`, extracted from David A. Madore's original `03s01a.pov`. They use different camera and surface-clipping conventions. The short movies show a **real three-dimensional locus**, not a complex-surface resolution.
+
+![Actual verified POV-Ray movie of Madore's original E6 cubic](renders/madore-e6/madore-e6-povray.gif)
+
+**[POV-Ray: 32-frame animated GIF](renders/madore-e6/madore-e6-povray.gif)** · [MP4](renders/madore-e6/madore-e6-povray.mp4) · [validation manifest](renders/madore-e6/madore-e6-povray-manifest.json) · [rendering script](scripts/render-madore-e6-povray.sh)
+
+**[SURFER/jsurf: 32-frame animated GIF](https://github.com/isomorphismes/algebraic-variety-explorer-mobile/blob/feature/madore-e6-orbit/renders/madore-e6/madore-e6-surfer.gif)** · [MP4](https://github.com/isomorphismes/algebraic-variety-explorer-mobile/blob/feature/madore-e6-orbit/renders/madore-e6/madore-e6-surfer.mp4) · [SURFER pull request](https://github.com/isomorphismes/algebraic-variety-explorer-mobile/pull/29)
+
+See [exact derivation and comparison](notes/09-madore-e6-cross-render.md) and [the complete source polynomial atlas for all 54 films](notes/10-madore-source-polynomial-atlas.md).
+
 ## First correction
 
 A **deformation** or **smoothing** is not a **resolution**.
@@ -102,6 +114,8 @@ A₁ → D₄ → E₈
 - [`notes/07-e8-voronoi-slices.md`](notes/07-e8-voronoi-slices.md) — Madore's eight-dimensional E₈ Voronoi tessellation shown as moving 2D slices; exact nearest-lattice reconstruction, weighted planar sections, and the limited ADE connection.
 - [`notes/07-david-madore-youtube-channel-map.md`](notes/07-david-madore-youtube-channel-map.md) — thematic map of Madore's mathematical video channel, including singularities, Lie-theoretic sound, E₈ and Weyl-group imagery, waves, four-polytopes, hyperbolic geometry, relativity, and Fourier experiments.
 - [`notes/08-cubic-surfaces-youtube-playlist.md`](notes/08-cubic-surfaces-youtube-playlist.md) — exact 32-video inventory of Madore's *Cubic surfaces* YouTube playlist, linked to his 54-film DVD, with deformation-versus-resolution cautions.
+- [`notes/09-madore-e6-cross-render.md`](notes/09-madore-e6-cross-render.md) — tested POV-Ray and SURFER/jsurf films of Madore's exact E₆ cubic, with mathematical and rendering differences recorded.
+- [`notes/10-madore-source-polynomial-atlas.md`](notes/10-madore-source-polynomial-atlas.md) — original-source coefficients and rotation/clock controls for all 54 cubic-surface movies, plus a machine-readable JSON ledger.
 - [`sources/README.md`](sources/README.md) — source ledger and links into the other repositories.
 - [`papers/README.md`](papers/README.md) — Patrick du Val's original three-part paper and modern guides.
 
