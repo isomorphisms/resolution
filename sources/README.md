@@ -97,6 +97,7 @@ Status: **bibliographic record and publisher extracts checked**. The papers them
 
 ### Cubic-surface films
 
+- **[Special thanks to David A. Madore, original source links, and source-code attribution rules](../ACKNOWLEDGMENTS.md)**
 - *The Cubic Surfaces DVD*
 - http://www.madore.org/cubic-dvd/
 
