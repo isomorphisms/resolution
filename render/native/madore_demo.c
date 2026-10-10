@@ -1,9 +1,24 @@
 /*
- * Madore-style scene exercise for the resolution repository.
+ * Madore surface exercises for the resolution repository.
  *
- * This file is inspired by David A. Madore's fixed clipping sphere,
- * fixed three-colour lighting, and deterministic 12-second/25-fps films.
- * It does not contain or claim to reproduce his POV-Ray implementation.
+ * David A. Madore — The Cubic Surfaces DVD (2006)
+ * Original project, animations, and POV-Ray source:
+ *   http://www.madore.org/cubic-dvd/
+ * Exact imported source used below:
+ *   vendor/david-madore/cubic-dvd/upstream/cubic-dvd/03s01a.pov
+ *
+ * Credit: David A. Madore created the original mathematical animations and
+ * released the DVD and its source into the public domain.
+ *
+ * Relationship to original:
+ * - the A1 and Cayley exercises are inspired by Madore's fixed clipping sphere,
+ *   three-colour lighting, and deterministic film clock;
+ * - render_madore_03s01a is adapted from 03s01a.pov's exact polynomial.
+ *
+ * Changes to 03s01a: extract the zero set from Madore's thin CSG shell, scale
+ * his radius-4 clipping ball to this renderer's unit ball, use exact first-root
+ * tracing instead of shell intersection, and use the existing orthographic
+ * camera/material path. Madore did not author or endorse these changes.
  *
  * Numerical rendering is provided by the SURFER C core from
  * isomorphismes/algebraic-variety-explorer-mobile, derived from Christian
@@ -240,6 +255,56 @@ static int render_cayley(const char *output_directory, FILE *manifest)
     return 1;
 }
 
+static int render_madore_03s01a(const char *output_directory, FILE *manifest)
+{
+    /*
+     * Madore 03s01a.pov uses F(X,Y,Z) = X^2 + X Z^2 + Y^3 and clips
+     * with X^2 + Y^2 + Z^2 <= 16. Put X=4x, Y=4y, Z=4z and divide F
+     * by 16 to obtain the unit-ball equation
+     *
+     *     f(x,y,z) = x^2 + 4 x z^2 + 4 y^3 = 0.
+     *
+     * His two opposite cubics thicken this into |F| <= 0.0001 for CSG;
+     * this renderer traces the exact zero set instead.
+     */
+    const surfer_term surface_terms[] = {
+        {1.0, 2, 0, 0},
+        {4.0, 1, 0, 2},
+        {4.0, 0, 3, 0}
+    };
+    const surfer_term gradient_x_terms[] = {
+        {2.0, 1, 0, 0},
+        {4.0, 0, 0, 2}
+    };
+    const surfer_term gradient_y_terms[] = {{12.0, 0, 2, 0}};
+    const surfer_term gradient_z_terms[] = {{8.0, 1, 0, 1}};
+    const surfer_prepared_surface surface = {
+        3,
+        {surface_terms, sizeof(surface_terms) / sizeof(surface_terms[0])},
+        {gradient_x_terms, sizeof(gradient_x_terms) / sizeof(gradient_x_terms[0])},
+        {gradient_y_terms, sizeof(gradient_y_terms) / sizeof(gradient_y_terms[0])},
+        {gradient_z_terms, sizeof(gradient_z_terms) / sizeof(gradient_z_terms[0])}
+    };
+
+    char path[4096];
+    const int length = snprintf(
+        path,
+        sizeof(path),
+        "%s/madore-03s01a-native.ppm",
+        output_directory);
+    if (length < 0 || (size_t)length >= sizeof(path)) {
+        fprintf(stderr, "output path is too long\n");
+        return 0;
+    }
+
+    /* Match the original camera direction; projection remains orthographic. */
+    if (!render_surface(path, &surface, M_PI, -atan(0.25))) {
+        return 0;
+    }
+    fprintf(manifest, "madore-03s01a\t75\t0\t%s\n", path);
+    return 1;
+}
+
 int main(int argc, char **argv)
 {
     if (argc != 2) {
@@ -273,6 +338,7 @@ int main(int argc, char **argv)
         ok = render_a1_frame(argv[1], frames[i], manifest) && ok;
     }
     ok = render_cayley(argv[1], manifest) && ok;
+    ok = render_madore_03s01a(argv[1], manifest) && ok;
     if (fclose(manifest) != 0) {
         fprintf(stderr, "close failed for %s\n", manifest_path);
         ok = 0;
