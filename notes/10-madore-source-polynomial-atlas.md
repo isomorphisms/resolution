@@ -99,6 +99,6 @@ Let c=cos(2πt). The exact source gives F_t=−x³+3cx²+3xz²+y²+3cz²−4c³.
 
 ## Boundaries of the extraction
 
-The 54 filenames and film descriptions come directly from Madore's original list and HTML index; every input .pov byte SHA-256 was checked against the original archive's import manifest. No expression was dynamically evaluated. Longer random-polynomial examples are shortened only in this Markdown table; full coefficients are preserved in the JSON. Actual surface singularities should still be proved individually rather than inferred from the film titles.
+The 54 filenames and film descriptions come directly from Madore's original list and HTML index; every input .pov byte SHA-256 was checked against the original archive's import manifest. The two opposed cubics were numerically cross-checked at six clock values by a restricted arithmetic evaluator; original upstream code was not executed. Longer random-polynomial examples are shortened only in this Markdown table; full coefficients are preserved in the JSON. Actual surface singularities should still be proved individually rather than inferred from the film titles.
 
 Original source and attribution: http://www.madore.org/cubic-dvd/ · [Project acknowledgment](../ACKNOWLEDGMENTS.md) · [SURFER movie PR](https://github.com/isomorphismes/algebraic-variety-explorer-mobile/pull/29).
