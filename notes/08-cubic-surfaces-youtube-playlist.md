@@ -93,7 +93,7 @@ The cubic-surface `E₆` examples do not substitute for a full complex-surface `
 
 ## Provenance and credit
 
-**David A. Madore** created the original films, mathematical choices, and published source code. Credit him even when using the public-domain material. 
+**David A. Madore** created the original films, mathematical choices, and published source code. Credit him even when using the public-domain material. See the project's **[special acknowledgment and reusable file-level source credit](../ACKNOWLEDGMENTS.md)**. 
 
 - Exact YouTube playlist: https://www.youtube.com/playlist?list=PL1AE045877D932E6A
 - Machine-readable public playlist index used to verify **32 rows**: https://inv.nadeko.net/api/v1/playlists/PL1AE045877D932E6A (retrieved 2026-10-09)
