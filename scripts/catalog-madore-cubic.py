@@ -196,7 +196,7 @@ def main() -> None:
         "notes": [
             "The first source cubic is F - 0.0001 and the second is -F - 0.0001.",
             "Coefficients_F remove only the thin-band offset from the first vector.",
-            "All textual formula expressions remain unexecuted POV-Ray expressions.",
+            "The expressions are preserved symbolically. A restricted arithmetic AST evaluator checks the opposed solids at six clock values; no original source script is executed.",
             "Classification labels are copied from Madore's source index, not independently proved.",
         ],
         "films": items,
@@ -309,7 +309,7 @@ def main() -> None:
         "The 54 filenames and film descriptions come directly from Madore's "
         "original list and HTML index; every input .pov byte SHA-256 was "
         "checked against the original archive's import manifest. "
-        "No expression was dynamically evaluated. Longer random-polynomial "
+        "The two opposed cubics were numerically cross-checked at six clock values by a restricted arithmetic evaluator; original upstream code was not executed. Longer random-polynomial "
         "examples are shortened only in this Markdown table; full "
         "coefficients are preserved in the JSON. "
         "Actual surface singularities should still be proved individually "
