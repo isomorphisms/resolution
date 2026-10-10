@@ -92,6 +92,7 @@ A₁ → D₄ → E₈
 - [`notes/05-complex-slice-atlas.md`](notes/05-complex-slice-atlas.md) — six real input channels, all twenty coordinate triples, `Re(f)=0`/`Im(f)=0`, Riemann-sphere chart boundaries, and the distinction between moving an input slice and moving an output probe.
 - [`notes/06-richard-borcherds-du-val.md`](notes/06-richard-borcherds-du-val.md) — Borcherds's E₈ lecture, reconstructed eight-point-blowup chart sequence, residual A₁/D₄ branches, and a distinct process tree for animation.
 - [`notes/06-grassmannian-spectra.md`](notes/06-grassmannian-spectra.md) — Madore's *The sound of some grassmannians*, spectral reconstruction questions, and the distinction between three sonification methods.
+- [`notes/07-fourier-icosahedron.md`](notes/07-fourier-icosahedron.md) — Madore's icosahedron Fourier slices, exact cosine field, and proposed geometry-to-sound probe.
 - [`sources/README.md`](sources/README.md) — source ledger and links into the other repositories.
 - [`papers/README.md`](papers/README.md) — Patrick du Val's original three-part paper and modern guides.
 
