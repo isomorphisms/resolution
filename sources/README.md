@@ -101,7 +101,7 @@ Status: **bibliographic record and publisher extracts checked**. The papers them
 - *The Cubic Surfaces DVD*
 - http://www.madore.org/cubic-dvd/
 
-Status: **primary project page read**, including the complete 54-film index, technical format, deformation timing, lighting, clipping convention, source availability, and public-domain statement.
+Status: **primary project page read**, including the complete 54-film index, technical format, deformation timing, lighting, clipping convention, source availability, and public-domain statement. **Original 2006 POV-Ray and production source has also been acquired and vendored:** [94 original source files](../vendor/david-madore/cubic-dvd/upstream/cubic-dvd/), [the complete original tarball](../vendor/david-madore/cubic-dvd/original/cubic-dvd.tar.gz), and [a source SHA-256 and member manifest](../vendor/david-madore/cubic-dvd/SOURCE-MANIFEST.json). The mathematical parameters in individual .pov files still require a systematic reading.
 
 The linked [*Cubic surfaces* YouTube playlist](https://www.youtube.com/playlist?list=PL1AE045877D932E6A) has **32 verified video-title/ID pairs** in order; see the [complete 32-item index](../notes/08-cubic-surfaces-youtube-playlist.md). Playlist metadata was checked on 2026-10-09. The YouTube clip descriptions include an error for the Cayley cubic: the correct singularities are **four A₁**, not the “four A4” printed in that one description.
 
