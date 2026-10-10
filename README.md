@@ -90,6 +90,7 @@ A₁ → D₄ → E₈
 - [`notes/03-david-madore.md`](notes/03-david-madore.md) — notes on Madore's singularity films and Lie-theoretic sonification.
 - [`notes/04-audio.md`](notes/04-audio.md) — three mathematically distinct audio systems.
 - [`notes/05-complex-slice-atlas.md`](notes/05-complex-slice-atlas.md) — six real input channels, all twenty coordinate triples, `Re(f)=0`/`Im(f)=0`, Riemann-sphere chart boundaries, and the distinction between moving an input slice and moving an output probe.
+- [`notes/06-richard-borcherds-du-val.md`](notes/06-richard-borcherds-du-val.md) — Borcherds's E₈ lecture, reconstructed eight-point-blowup chart sequence, residual A₁/D₄ branches, and a distinct process tree for animation.
 - [`notes/06-grassmannian-spectra.md`](notes/06-grassmannian-spectra.md) — Madore's *The sound of some grassmannians*, spectral reconstruction questions, and the distinction between three sonification methods.
 - [`sources/README.md`](sources/README.md) — source ledger and links into the other repositories.
 - [`papers/README.md`](papers/README.md) — Patrick du Val's original three-part paper and modern guides.
@@ -101,6 +102,7 @@ These notes adapt and cross-link earlier notes rather than copying books or pape
 - David Eisenbud, *Commutative Algebra with a View Toward Algebraic Geometry*;
 - Miles Reid, *Chapters on Algebraic Surfaces* and *The Du Val Singularities Aₙ, Dₙ, E₆, E₇, E₈*;
 - Patrick du Val's 1934 trilogy on isolated surface singularities that do not affect adjunction;
-- David A. Madore's cubic-surface animations and Lie-group sound experiments.
+- David A. Madore's cubic-surface animations and Lie-group sound experiments;
+- Richard E. Borcherds's lecture 39 on an explicit resolution of the E₈ singularity.
 
 Credit belongs to the original authors and to the older work they cite, especially Patrick du Val, Michael Artin, Henry Laufer, Friedrich Hirzebruch, Heinrich Jung, John McKay, Bertram Kostant, Hermann Weyl, and the many people behind the ADE correspondence.
