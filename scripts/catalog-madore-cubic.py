@@ -55,6 +55,58 @@ def formula_from_coefficients(coefficients: list[str]) -> str:
             summands.append("(" + c + ")*" + monomial)
     return " + ".join(summands).replace("+ -", "- ") if summands else "0"
 
+def evaluate_safe(expression: str, clock: float) -> float:
+    """Evaluate restricted POV-Ray coefficient arithmetic without eval or exec."""
+    import ast
+    import math
+    import operator
+
+    allowed_binops = {
+        ast.Add: operator.add,
+        ast.Sub: operator.sub,
+        ast.Mult: operator.mul,
+        ast.Div: operator.truediv,
+        ast.Pow: operator.pow,
+    }
+    allowed_unary = {ast.UAdd: operator.pos, ast.USub: operator.neg}
+    names = {"clock": clock, "pi": math.pi}
+    functions = {"cos": math.cos, "sin": math.sin}
+
+    def walk(node):
+        if isinstance(node, ast.Constant) and type(node.value) in (int, float):
+            return float(node.value)
+        if isinstance(node, ast.Name) and node.id in names:
+            return names[node.id]
+        if isinstance(node, ast.UnaryOp) and type(node.op) in allowed_unary:
+            return allowed_unary[type(node.op)](walk(node.operand))
+        if isinstance(node, ast.BinOp) and type(node.op) in allowed_binops:
+            return allowed_binops[type(node.op)](walk(node.left), walk(node.right))
+        if (isinstance(node, ast.Call) and isinstance(node.func, ast.Name)
+                and node.func.id in functions and len(node.args) == 1
+                and not node.keywords):
+            return functions[node.func.id](walk(node.args[0]))
+        raise ValueError("Unsafe or unsupported POV-Ray coefficient: " + expression)
+
+    return walk(ast.parse(expression, mode="eval").body)
+
+
+def check_opposing_thickened_solids(vectors: list[list[str]], name: str) -> None:
+    """Prove numerically across six clock values that the two cubics form F±eps.
+
+    This is a structural/rendering check. It is not a proof of singularity type.
+    """
+    for clock in (0.0, 0.125, 0.25, 0.375, 0.625, 0.875):
+        for index in range(20):
+            first = evaluate_safe(vectors[0][index], clock)
+            second = evaluate_safe(vectors[1][index], clock)
+            expected_sum = -0.0002 if index == 19 else 0.0
+            if abs((first + second) - expected_sum) > 1e-8:
+                fail(
+                    name + ": cubic pair is not the claimed thin band at "
+                    + str(clock) + ", coefficient A" + str(index + 1)
+                )
+
+
 def main() -> None:
     original_manifest = json.loads((ARCHIVE / "SOURCE-MANIFEST.json").read_text())
     hash_by_name = {
@@ -89,6 +141,7 @@ def main() -> None:
         if len(cubic_blocks) != 2 or any(len(block) != 20 for block in cubic_blocks):
             fail(source.name + ": expected two 20-coefficient cubic solids")
         vectors = [[x.strip() for x in block] for block in cubic_blocks]
+        check_opposing_thickened_solids(vectors, source.name)
         first_constant = vectors[0][19]
         if not re.search(r"-\s*0\.0001\s*$", first_constant):
             fail(source.name + ": absent expected -0.0001 skin tolerance")
@@ -171,10 +224,9 @@ def main() -> None:
         "coefficient expressions for each film, both original cubic vectors, "
         "SHA-256 for each source, camera and rotation parameters.",
         "",
-        "We found " + str(rotations) + " movies driven by rotation alone and "
-        + str(deformations) + " movies with time-dependent polynomial "
-        "coefficients. Several remaining examples have constant equations "
-        "but other time-dependent scene motions.",
+        "We found " + str(rotations) + " films driven by object rotation alone and "
+        + str(deformations) + " films with time-dependent polynomial "
+        "coefficients. Every source scene also has explicit camera and lighting settings.",
         "",
         "## POV-Ray cubic coefficient order",
         "",
