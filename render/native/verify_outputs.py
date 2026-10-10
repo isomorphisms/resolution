@@ -49,10 +49,20 @@ def main() -> int:
             raise ValueError(f"{path}: only {len(colors)} distinct colors")
         digests[name] = hashlib.sha256(path.read_bytes()).hexdigest()
 
-    if digests["a1-frame-075.ppm"] == digests["a1-frame-000.ppm"]:
-        raise ValueError("singular A1 frame is byte-identical to nearby smooth frame")
-    if len(set(digests.values())) != len(digests):
-        raise ValueError("two expected render artifacts are byte-identical")
+    if digests["a1-frame-000.ppm"] != digests["a1-frame-150.ppm"]:
+        raise ValueError("symmetric frames 0 and 150 should be byte-identical")
+
+    distinct_images = {
+        digests["a1-frame-000.ppm"],
+        digests["a1-frame-075.ppm"],
+        digests["a1-frame-225.ppm"],
+        digests["cayley-affine.ppm"],
+    }
+    if len(distinct_images) != 4:
+        raise ValueError(
+            "nearby smooth, singular, maximal deformation, and Cayley frames "
+            "must be distinct"
+        )
 
     manifest = (output_directory / "manifest.tsv").read_text(encoding="utf-8")
     if "a1\t75\t0\t" not in manifest:
