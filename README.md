@@ -6,7 +6,7 @@ Visual and auditory notes toward an honest animation of a surface singularity be
 
 **Thank you to [David A. Madore](http://www.madore.org/cubic-dvd/)** for creating and openly sharing *The Cubic Surfaces DVD*: 54 mathematical animations of cubic surfaces and their singularities, with the original POV-Ray source code made public. His controlled lighting, clipping, and deformation films are an important visual reference for this project. Madore released that DVD and its accompanying source into the public domain and asked for recognition of his authorship; **we gladly give it**. His films show **deformations**, while the resolution maps and exceptional curves proposed here are a separate undertaking.
 
-**[Full acknowledgment, source-code credit template, and original links →](ACKNOWLEDGMENTS.md)** · [Madore's original project and source](http://www.madore.org/cubic-dvd/) · [YouTube playlist](https://www.youtube.com/playlist?list=PL1AE045877D932E6A)
+**[Full acknowledgment and source-code credit →](ACKNOWLEDGMENTS.md)** · **[Actual original POV-Ray and production code now copied here](vendor/david-madore/cubic-dvd/upstream/cubic-dvd/)** · [Original 2006 tarball](vendor/david-madore/cubic-dvd/original/cubic-dvd.tar.gz) · [Import manifest](vendor/david-madore/cubic-dvd/SOURCE-MANIFEST.json) · [Madore's source page](http://www.madore.org/cubic-dvd/) · [YouTube playlist](https://www.youtube.com/playlist?list=PL1AE045877D932E6A)
 
 The first target is not merely a rotating implicit surface. It is a film that keeps four different objects straight:
 
