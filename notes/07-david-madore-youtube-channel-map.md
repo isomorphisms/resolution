@@ -29,7 +29,7 @@ Primary project page:
 
 - <http://www.madore.org/cubic-dvd/>
 
-This is the most directly useful cluster for `resolution`. It contains **54 twelve-second computer-generated films** made with POV-Ray. They form a controlled atlas of cubic surfaces and deformations. Madore fixes the clipping sphere and the three colored lights throughout, so changes in the image come from the mathematical surface rather than presentation drift.
+This is the most directly useful cluster for `resolution`. The [corresponding YouTube *Cubic surfaces* playlist](08-cubic-surfaces-youtube-playlist.md) currently exposes **32 exact video titles and links**; the original DVD contains **54 twelve-second computer-generated films** made with POV-Ray. They form a controlled atlas of cubic surfaces and deformations. Madore fixes the clipping sphere and the three colored lights throughout, so changes in the image come from the mathematical surface rather than presentation drift.
 
 The channel map should treat the DVD as six visual subseries.
 
