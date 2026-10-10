@@ -148,6 +148,12 @@ Checked points:
 
 Status: **video metadata and description checked; video audio and linked thread not independently transcribed**. The description says the spectra are of real, complex, quaternionic Grassmannians and the octonionic projective plane. Exact amplitude, metric normalization, and synthesis details are still unverified. See [the dedicated note](../notes/06-grassmannian-spectra.md).
 
+### Icosahedron Fourier video
+
+- David A. Madore, *Fourier transform of an icosahedron*: https://www.youtube.com/watch?v=uyitkl00Ey4
+
+Status: **video metadata and description checked; animation frames, production code, and transcript not independently inspected**. The description gives twelve icosahedral vertices `(0,±1,±φ)`, `(±1,±φ,0)`, `(±φ,0,±1)` and describes grayscale slices of the three-dimensional transform of point masses. It also accidentally says “dodecahedron”; the coordinates are icosahedral. The exact cosine formula and renderer/audio proposals in [the dedicated note](../notes/07-fourier-icosahedron.md) are independent mathematical deductions, not asserted to be Madore's implementation.
+
 ## 5. Attribution trail
 
 Names that should remain visible as the project grows:
