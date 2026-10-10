@@ -215,7 +215,7 @@ The eight exceptional curves should not all appear at once without cause. A char
 - changes in self-intersection;
 - the map back to the preceding surface.
 
-The exact economical chart sequence for `E₈` remains to be worked out in a later computational pass. The first visual notes should not pretend otherwise.
+A concrete sequence of eight ordinary point blowups is reconstructed from Richard E. Borcherds's lecture in [`06-richard-borcherds-du-val.md`](06-richard-borcherds-du-val.md). The residual singularity sequence and several central chart equations are established there; a complete curve-by-curve exceptional-divisor ledger and intersection-matrix computation are **not** yet worked out. A smaller/economical birational model also remains to be compared.
 
 ## 7. Why a three-dimensional picture is necessarily partial
 
