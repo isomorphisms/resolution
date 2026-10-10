@@ -29,10 +29,10 @@ jobs:
           path: .deps/algebraic-variety-explorer-mobile
 
       - name: Compile and render native comparison frames
-        run: render/native/build-and-render.sh out/native
+        run: bash render/native/build-and-render.sh out/native
 
       - name: Verify native outputs
-        run: render/native/verify_outputs.py out/native
+        run: python3 render/native/verify_outputs.py out/native
 
       - name: Upload native frames and receipts
         uses: actions/upload-artifact@v4
@@ -53,7 +53,7 @@ jobs:
           sudo apt-get install --yes povray
 
       - name: Fetch and render an original Madore scene
-        run: render/reference/fetch-and-render-madore.sh out/madore-reference
+        run: bash render/reference/fetch-and-render-madore.sh out/madore-reference
 
       - name: Upload source inventory, logs, and reference frame
         if: always()
