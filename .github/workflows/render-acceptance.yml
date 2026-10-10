@@ -52,7 +52,7 @@ jobs:
           sudo apt-get update
           sudo apt-get install --yes povray
 
-      - name: Fetch and render an original Madore scene
+      - name: Render the vendored original Madore scene
         run: bash render/reference/fetch-and-render-madore.sh out/madore-reference
 
       - name: Upload source inventory, logs, and reference frame
