@@ -1,0 +1,75 @@
+name: Vendor David Madore cubic DVD source
+
+# One-shot import when this workflow itself is installed. Subsequent code
+# commits do not retrigger it. Re-running manually is safe once imported.
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/vendor-madore-source.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  import-source:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out resolution
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Download original public-domain archive
+        shell: bash
+        run: |
+          set -euo pipefail
+          if test -f vendor/david-madore/cubic-dvd/SOURCE-MANIFEST.json; then
+            echo "The original source is already imported."
+            echo "IMPORT_ALREADY_DONE=1" >> "$GITHUB_ENV"
+            exit 0
+          fi
+          output="$RUNNER_TEMP/cubic-dvd.tar.gz"
+          source_https="https://www.madore.org/cubic-dvd/SOURCE/cubic-dvd.tar.gz"
+          source_http="http://www.madore.org/cubic-dvd/SOURCE/cubic-dvd.tar.gz"
+          echo "Downloading David A. Madore's original Cubic Surfaces DVD source."
+          if ! curl --fail --location --retry 2 --connect-timeout 20 --max-time 240 --max-filesize 120000000 --output "$output" "$source_https"; then
+            curl --fail --location --retry 2 --connect-timeout 20 --max-time 240 --max-filesize 120000000 --output "$output" "$source_http"
+          fi
+          test -s "$output"
+          gzip --test "$output"
+          sha256sum "$output"
+
+      - name: Copy original source files without executing them
+        if: env.IMPORT_ALREADY_DONE != '1'
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 scripts/import_madore_cubic_dvd.py "$RUNNER_TEMP/cubic-dvd.tar.gz"
+          test -s vendor/david-madore/cubic-dvd/SOURCE-MANIFEST.json
+          python3 - <<'PY'
+          import json
+          with open("vendor/david-madore/cubic-dvd/SOURCE-MANIFEST.json", encoding="utf-8") as f:
+              m = json.load(f)
+          assert m["original_author"] == "David A. Madore"
+          assert m["files_imported"] > 0
+          print("Verified source-file count:", m["files_imported"])
+          print("Original SHA-256:", m["original_source_archive_sha256"])
+          PY
+
+      - name: Commit public-domain upstream sources with provenance
+        if: env.IMPORT_ALREADY_DONE != '1'
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add vendor/david-madore/cubic-dvd/
+          if git diff --cached --quiet; then
+            echo "No source changes to commit."
+            exit 0
+          fi
+          git commit -m "Vendor David A. Madore's original public-domain cubic DVD source"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
