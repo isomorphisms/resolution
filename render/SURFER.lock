@@ -1,0 +1,5 @@
+repository=https://github.com/isomorphismes/algebraic-variety-explorer-mobile.git
+commit=3928dcd1d023baab7c44bb4fc34f0ebe331f6237
+path=native
+license=Apache-2.0
+notice=Copyright 2008 Christian Stussak; Android adaptation copyright 2026 Algebraic Variety Explorer contributors
