@@ -1,0 +1,54 @@
+#! /bin/sh
+
+imagedir="/data4/cubic-dvd/FRAMES"
+destdir="/data4/cubic-dvd/MPEG"
+snapframe="040"
+
+thumbsize=180,144
+
+pos1="45,144"
+pos2="270,144"
+pos3="495,144"
+pos4="45,336"
+pos5="270,336"
+pos6="495,336"
+
+do_menu () {
+  convert menu-base.png \
+  -draw "image over $pos1 $thumbsize \"${imagedir}/$2/$2${snapframe}.png\"" \
+  -draw "image over $pos2 $thumbsize \"${imagedir}/$3/$3${snapframe}.png\"" \
+  -draw "image over $pos3 $thumbsize \"${imagedir}/$4/$4${snapframe}.png\"" \
+  -draw "image over $pos4 $thumbsize \"${imagedir}/$5/$5${snapframe}.png\"" \
+  -draw "image over $pos5 $thumbsize \"${imagedir}/$6/$6${snapframe}.png\"" \
+  -draw "image over $pos6 $thumbsize \"${imagedir}/$7/$7${snapframe}.png\"" \
+  -font Helvetica -pointsize 40 -fill yellow \
+  -draw "gravity Center text 0,238 \"$8\"" \
+  $1
+}
+
+do_menu menu-1.png 01s01a 01s02a 01s03a 02s01a 03s01a 03s02a 1/9
+do_menu menu-2.png 03s03a 03s04a 04s01a 04s02a 04s03a 04s04a 2/9
+do_menu menu-3.png 05s01a 06s01a 06s02a 06s03a 07s01a 07s02a 3/9
+do_menu menu-4.png 07s03a 08s01a 08s02a 08s03a 09s01a 10s01a 4/9
+do_menu menu-5.png 10s02a 11s01a 11s02a 11s03a 11s04a 11s05a 5/9
+do_menu menu-6.png 11s06a 12s01a 13s01a 13s02a 13s03a 14s01a 6/9
+do_menu menu-7.png 15s01a 15s02a 16s01a 17s01a 17s02a 18s01a 7/9
+do_menu menu-8.png 19s01a 19s02a 20s01a 20s02a 21s01a 21s02a 8/9
+do_menu menu-9.png 21s03a 21s04a 21s05a 99s01a 99s02a 99s03a 9/9
+
+convert menu-1.png -resize 180x144 menu-1-small.png
+
+if [ -e menu-silence.ac3 ]; then
+    :
+else
+    ffmpeg -ab 64 -ar 48000 -ac 2 -t 6 menu-silence.ac3
+fi
+
+for menu in menu-1 menu-2 menu-3 menu-4 menu-5 menu-6 menu-7 menu-8 menu-9 ; do
+    convert "${menu}.png" ppm:- | \
+    ppmtoy4m -v 1 -n 150 -F 25:1 -A 59:54 -I p -r -S 420mpeg2 | \
+    mpeg2enc -v 1 -f 8 -n p -q 4 -a 2 -o "${menu}-tmp.m2v"
+    mplex -f8 -o "${menu}-tmp.mpg" "${menu}-tmp.m2v" menu-silence.ac3
+    spumux menu-highlight.xml < "${menu}-tmp.mpg" > "${destdir}/${menu}.mpg"
+    rm -f "${menu}-tmp.mpg" "${menu}-tmp.m2v"
+done

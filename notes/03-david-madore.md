@@ -84,6 +84,19 @@ The full set contains several clusters useful for this repository.
 - `A₄` deforming to two `A₂`s;
 - several `A₂→A₁`, `A₃→A₂`, and staged `A₁`/`A₂` deformations.
 
+#### Pinned clip: `A₅ → A₄` (user-provided link)
+
+- **David A. Madore**, *Cubic surface: deformation of an A5 singularity to an A4 singularity*: https://www.youtube.com/watch?v=VDaEZpKbYqQ
+- This is **film 31 of 54** in *The Cubic Surfaces DVD* index, rather than a separate filmed resolution.
+- Madore's video description identifies the **`A₅` singularity at approximately 3 s and 9 s**. The rest of the loop chiefly shows a cubic surface with an `A₄` singularity. Thus the exceptional `A₅` member is the **special fibre** in a family, despite the title's arrow.
+- A minimal local analytic *example of the same adjacency*, not an identification of Madore's actual cubic or rendering parameters, is
+  ```text
+  X_t : u v + w^6 + t w^5 = 0.
+  ```
+  For `t = 0`, the singularity at the origin is `A₅`; for any fixed `t ≠ 0`, its germ at the origin is `A₄`, since `w+t` is a holomorphic unit there. This illustrates why the more singular type appears at a special parameter value.
+- **Proposed comparison shot**, not an observation from the footage: synchronize a rotating/implicit 3D view with a symbolic resolution graph. The minimal `A₅` resolution has a five-vertex `(-2)` chain, versus a four-vertex chain for `A₄`. These are **resolutions of two different fibres**, not a blowup seen within the deformation film.
+- **Verification status:** title, author, video description, and DVD index verified; no frame-by-frame video inspection, transcription, or extraction of the actual POV-Ray equations. For those coefficients inspect Madore's publicly released project source, not the illustrative germ above.
+
 #### Multiple singular points and nonisolated loci
 
 - Cayley cubic with four `A₁` points;

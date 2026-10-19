@@ -1,0 +1,1848 @@
+{
+  "original_author": "David A. Madore",
+  "original_project": "http://www.madore.org/cubic-dvd/",
+  "original_source_archive": "http://www.madore.org/cubic-dvd/SOURCE/cubic-dvd.tar.gz",
+  "original_source_archive_sha256": "4996b498815783ab8f968022b8720cb5fad02ca8c7a40b82386978e5acdc2528",
+  "original_source_archive_bytes": 3100397,
+  "verbatim_archive_in_git": true,
+  "files_imported": 94,
+  "bytes_imported": 123511,
+  "files_listed": 348,
+  "entries": [
+    {
+      "name": "cubic-dvd/02s01a.pov",
+      "bytes": 799,
+      "status": "imported",
+      "sha256": "8f6dfaa9d604143f4f75f803d452799ff711235d2f1c3b9b4c9dc141170b4c29"
+    },
+    {
+      "name": "cubic-dvd/list",
+      "bytes": 378,
+      "status": "imported",
+      "sha256": "ff917dfbb36d883948c11a6787797ae370bb3b3b77891ec9bbe8baf8909d938c"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/99s02aTHB1.png",
+      "bytes": 5130,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/99s02aTHB2.png",
+      "bytes": 5460,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/99s02aTHB3.png",
+      "bytes": 5334,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/99s02aTHB4.png",
+      "bytes": 5239,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/21s03aTHB1.png",
+      "bytes": 4301,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/21s03aTHB2.png",
+      "bytes": 4261,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/21s03aTHB3.png",
+      "bytes": 4326,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/19s02aTHB1.png",
+      "bytes": 3671,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/21s03aTHB4.png",
+      "bytes": 4373,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/19s02aTHB2.png",
+      "bytes": 3737,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/11s06aTHB1.png",
+      "bytes": 3176,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/19s02aTHB3.png",
+      "bytes": 3787,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/11s06aTHB2.png",
+      "bytes": 2826,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/15s02aTHB1.png",
+      "bytes": 3558,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/16s01aTHB1.png",
+      "bytes": 4011,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/19s02aTHB4.png",
+      "bytes": 3799,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/11s06aTHB3.png",
+      "bytes": 3342,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/15s02aTHB2.png",
+      "bytes": 3533,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/16s01aTHB2.png",
+      "bytes": 4773,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/11s06aTHB4.png",
+      "bytes": 4026,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/15s02aTHB3.png",
+      "bytes": 3482,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/16s01aTHB3.png",
+      "bytes": 4878,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/11s02aTHB1.png",
+      "bytes": 3357,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/12s01aTHB1.png",
+      "bytes": 2662,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/15s02aTHB4.png",
+      "bytes": 3478,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/16s01aTHB4.png",
+      "bytes": 4342,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/11s02aTHB2.png",
+      "bytes": 3387,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/12s01aTHB2.png",
+      "bytes": 2630,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/11s02aTHB3.png",
+      "bytes": 3647,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/07s03aTHB1.png",
+      "bytes": 2098,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/12s01aTHB3.png",
+      "bytes": 3418,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/08s02aTHB1.png",
+      "bytes": 4892,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/09s01aTHB1.png",
+      "bytes": 4983,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/11s02aTHB4.png",
+      "bytes": 4824,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/07s03aTHB2.png",
+      "bytes": 2150,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/12s01aTHB4.png",
+      "bytes": 2265,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/08s02aTHB2.png",
+      "bytes": 5023,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/09s01aTHB2.png",
+      "bytes": 5332,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/07s03aTHB3.png",
+      "bytes": 2109,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/08s02aTHB3.png",
+      "bytes": 5205,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/03s03aTHB1.png",
+      "bytes": 4364,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/09s01aTHB3.png",
+      "bytes": 5153,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/04s02aTHB1.png",
+      "bytes": 4600,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/07s03aTHB4.png",
+      "bytes": 4156,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/05s01aTHB1.png",
+      "bytes": 4879,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/08s02aTHB4.png",
+      "bytes": 5751,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/03s03aTHB2.png",
+      "bytes": 4410,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/09s01aTHB4.png",
+      "bytes": 5300,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/04s02aTHB2.png",
+      "bytes": 4629,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/05s01aTHB2.png",
+      "bytes": 5461,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/03s03aTHB3.png",
+      "bytes": 4394,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/04s02aTHB3.png",
+      "bytes": 4417,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/05s01aTHB3.png",
+      "bytes": 4894,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/03s03aTHB4.png",
+      "bytes": 4797,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/01s01aTHB1.png",
+      "bytes": 5032,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/04s02aTHB4.png",
+      "bytes": 4925,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/05s01aTHB4.png",
+      "bytes": 5341,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/01s01aTHB2.png",
+      "bytes": 6081,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/01s01aTHB3.png",
+      "bytes": 5763,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/01s01aTHB4.png",
+      "bytes": 5031,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/99s03aTHB1.png",
+      "bytes": 3731,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/99s03aTHB2.png",
+      "bytes": 3834,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/99s03aTHB3.png",
+      "bytes": 3742,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/99s03aTHB4.png",
+      "bytes": 3744,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/21s04aTHB1.png",
+      "bytes": 4301,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/21s04aTHB2.png",
+      "bytes": 3070,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/21s04aTHB3.png",
+      "bytes": 1658,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/21s04aTHB4.png",
+      "bytes": 2264,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/20s01aTHB1.png",
+      "bytes": 1920,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/20s01aTHB2.png",
+      "bytes": 3040,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/20s01aTHB3.png",
+      "bytes": 3742,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/17s01aTHB1.png",
+      "bytes": 2868,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/20s01aTHB4.png",
+      "bytes": 4521,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/17s01aTHB2.png",
+      "bytes": 2838,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/11s03aTHB1.png",
+      "bytes": 3357,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/17s01aTHB3.png",
+      "bytes": 4244,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/13s01aTHB1.png",
+      "bytes": 2990,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/11s03aTHB2.png",
+      "bytes": 3274,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/17s01aTHB4.png",
+      "bytes": 5653,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/13s01aTHB2.png",
+      "bytes": 2783,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/11s03aTHB3.png",
+      "bytes": 3299,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/08s03aTHB1.png",
+      "bytes": 5357,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/13s01aTHB3.png",
+      "bytes": 1945,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/11s03aTHB4.png",
+      "bytes": 3225,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/08s03aTHB2.png",
+      "bytes": 5305,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/13s01aTHB4.png",
+      "bytes": 2467,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/08s03aTHB3.png",
+      "bytes": 5204,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/03s04aTHB1.png",
+      "bytes": 5198,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/04s03aTHB1.png",
+      "bytes": 4216,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/08s03aTHB4.png",
+      "bytes": 5292,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/06s01aTHB1.png",
+      "bytes": 4739,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/03s04aTHB2.png",
+      "bytes": 4951,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/04s03aTHB2.png",
+      "bytes": 4249,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/06s01aTHB2.png",
+      "bytes": 5425,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/03s04aTHB3.png",
+      "bytes": 4386,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/04s03aTHB3.png",
+      "bytes": 4411,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/06s01aTHB3.png",
+      "bytes": 4693,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/03s04aTHB4.png",
+      "bytes": 3145,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/01s02aTHB1.png",
+      "bytes": 5032,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/04s03aTHB4.png",
+      "bytes": 4782,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/02s01aTHB1.png",
+      "bytes": 5496,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/06s01aTHB4.png",
+      "bytes": 5057,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/01s02aTHB2.png",
+      "bytes": 5594,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/02s01aTHB2.png",
+      "bytes": 5515,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/01s02aTHB3.png",
+      "bytes": 5750,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/02s01aTHB3.png",
+      "bytes": 6020,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/01s02aTHB4.png",
+      "bytes": 6234,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/02s01aTHB4.png",
+      "bytes": 5385,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/21s05aTHB1.png",
+      "bytes": 4557,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/21s05aTHB2.png",
+      "bytes": 4471,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/21s05aTHB3.png",
+      "bytes": 4288,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/21s05aTHB4.png",
+      "bytes": 4058,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/20s02aTHB1.png",
+      "bytes": 3506,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/21s01aTHB1.png",
+      "bytes": 4510,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/20s02aTHB2.png",
+      "bytes": 3582,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/21s01aTHB2.png",
+      "bytes": 3931,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/20s02aTHB3.png",
+      "bytes": 3731,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/21s01aTHB3.png",
+      "bytes": 3153,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/17s02aTHB1.png",
+      "bytes": 4393,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/18s01aTHB1.png",
+      "bytes": 3628,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/20s02aTHB4.png",
+      "bytes": 3770,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/21s01aTHB4.png",
+      "bytes": 3077,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/17s02aTHB2.png",
+      "bytes": 4403,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/18s01aTHB2.png",
+      "bytes": 3313,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/11s04aTHB1.png",
+      "bytes": 3357,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/17s02aTHB3.png",
+      "bytes": 4253,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/18s01aTHB3.png",
+      "bytes": 3679,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/13s02aTHB1.png",
+      "bytes": 2078,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/14s01aTHB1.png",
+      "bytes": 4518,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/11s04aTHB2.png",
+      "bytes": 3070,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/17s02aTHB4.png",
+      "bytes": 4287,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/18s01aTHB4.png",
+      "bytes": 4395,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/13s02aTHB2.png",
+      "bytes": 2048,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/14s01aTHB2.png",
+      "bytes": 4508,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/11s04aTHB3.png",
+      "bytes": 1659,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/13s02aTHB3.png",
+      "bytes": 1962,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/14s01aTHB3.png",
+      "bytes": 4733,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/11s04aTHB4.png",
+      "bytes": 1992,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/10s01aTHB1.png",
+      "bytes": 4333,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/13s02aTHB4.png",
+      "bytes": 2100,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/14s01aTHB4.png",
+      "bytes": 5343,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/10s01aTHB2.png",
+      "bytes": 4800,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/04s04aTHB1.png",
+      "bytes": 2955,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/10s01aTHB3.png",
+      "bytes": 5322,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/06s02aTHB1.png",
+      "bytes": 4285,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/07s01aTHB1.png",
+      "bytes": 2280,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/04s04aTHB2.png",
+      "bytes": 3132,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/10s01aTHB4.png",
+      "bytes": 4967,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/06s02aTHB2.png",
+      "bytes": 3540,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/07s01aTHB2.png",
+      "bytes": 2251,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/04s04aTHB3.png",
+      "bytes": 3622,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/06s02aTHB3.png",
+      "bytes": 4260,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/01s03aTHB1.png",
+      "bytes": 6102,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/07s01aTHB3.png",
+      "bytes": 2090,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/04s04aTHB4.png",
+      "bytes": 5036,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/03s01aTHB1.png",
+      "bytes": 3515,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/06s02aTHB4.png",
+      "bytes": 3716,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/01s03aTHB2.png",
+      "bytes": 5900,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/07s01aTHB4.png",
+      "bytes": 2298,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/03s01aTHB2.png",
+      "bytes": 4092,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/01s03aTHB3.png",
+      "bytes": 5401,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/03s01aTHB3.png",
+      "bytes": 4268,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/01s03aTHB4.png",
+      "bytes": 5194,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/03s01aTHB4.png",
+      "bytes": 4051,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/99s01aTHB1.png",
+      "bytes": 5363,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/99s01aTHB2.png",
+      "bytes": 5208,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/99s01aTHB3.png",
+      "bytes": 5086,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/99s01aTHB4.png",
+      "bytes": 4996,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/21s02aTHB1.png",
+      "bytes": 4301,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/21s02aTHB2.png",
+      "bytes": 4433,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/21s02aTHB3.png",
+      "bytes": 4857,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/19s01aTHB1.png",
+      "bytes": 2378,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/21s02aTHB4.png",
+      "bytes": 5562,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/19s01aTHB2.png",
+      "bytes": 3203,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/11s05aTHB1.png",
+      "bytes": 3477,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/13s03aTHB1.png",
+      "bytes": 2141,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/19s01aTHB3.png",
+      "bytes": 3794,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/11s05aTHB2.png",
+      "bytes": 3418,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/15s01aTHB1.png",
+      "bytes": 2525,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/13s03aTHB2.png",
+      "bytes": 2124,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/19s01aTHB4.png",
+      "bytes": 4496,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/11s05aTHB3.png",
+      "bytes": 3340,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/15s01aTHB2.png",
+      "bytes": 4568,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/13s03aTHB3.png",
+      "bytes": 1953,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/11s05aTHB4.png",
+      "bytes": 3276,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/15s01aTHB3.png",
+      "bytes": 5091,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/10s02aTHB1.png",
+      "bytes": 5376,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/13s03aTHB4.png",
+      "bytes": 1599,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/11s01aTHB1.png",
+      "bytes": 2389,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/15s01aTHB4.png",
+      "bytes": 3933,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/10s02aTHB2.png",
+      "bytes": 5377,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/11s01aTHB2.png",
+      "bytes": 4081,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/10s02aTHB3.png",
+      "bytes": 5310,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/06s03aTHB1.png",
+      "bytes": 5876,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/11s01aTHB3.png",
+      "bytes": 4568,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/07s02aTHB1.png",
+      "bytes": 1857,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/08s01aTHB1.png",
+      "bytes": 5037,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/10s02aTHB4.png",
+      "bytes": 5110,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/06s03aTHB2.png",
+      "bytes": 5717,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/11s01aTHB4.png",
+      "bytes": 3560,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/07s02aTHB2.png",
+      "bytes": 1966,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/08s01aTHB2.png",
+      "bytes": 5294,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/06s03aTHB3.png",
+      "bytes": 4742,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/07s02aTHB3.png",
+      "bytes": 2090,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/08s01aTHB3.png",
+      "bytes": 4863,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/03s02aTHB1.png",
+      "bytes": 3842,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/06s03aTHB4.png",
+      "bytes": 2854,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/04s01aTHB1.png",
+      "bytes": 4484,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/07s02aTHB4.png",
+      "bytes": 2256,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/08s01aTHB4.png",
+      "bytes": 5282,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/03s02aTHB2.png",
+      "bytes": 3910,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/04s01aTHB2.png",
+      "bytes": 4213,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/03s02aTHB3.png",
+      "bytes": 4115,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/04s01aTHB3.png",
+      "bytes": 2922,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/03s02aTHB4.png",
+      "bytes": 4204,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/THUMBNAILS/04s01aTHB4.png",
+      "bytes": 3624,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/background.png",
+      "bytes": 90888,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/cmdlines",
+      "bytes": 739,
+      "status": "imported",
+      "sha256": "4bbf1860f80da15eb87e058e8e4b641647030f99092abf731ad69f0ff31b11ba"
+    },
+    {
+      "name": "cubic-dvd/intro.pov",
+      "bytes": 874,
+      "status": "imported",
+      "sha256": "91714ca2299a431f2672ff8fe725cc061b741bba32d93d0dc49d4ebdf2ddd6af"
+    },
+    {
+      "name": "cubic-dvd/makeintro",
+      "bytes": 640,
+      "status": "imported",
+      "sha256": "e3eca32f291b1a43de2b2d0049bf26345a2970aaf256e4ae3cbd49173cd7584b"
+    },
+    {
+      "name": "cubic-dvd/makemenus",
+      "bytes": 1993,
+      "status": "imported",
+      "sha256": "7a86704a945679a0308aefb980b6550ab6659a9ee81cecf9bd655b1f8951702e"
+    },
+    {
+      "name": "cubic-dvd/17s01a.pov",
+      "bytes": 674,
+      "status": "imported",
+      "sha256": "bacad8d5a320405f53fe831227415a8ed104dbf72c6a965067a5ad43431a01eb"
+    },
+    {
+      "name": "cubic-dvd/17s02a.pov",
+      "bytes": 701,
+      "status": "imported",
+      "sha256": "f2bb7b1ac94e477e606f71571dc3be993edc5a0a5856dad087c2b29672208e78"
+    },
+    {
+      "name": "cubic-dvd/menu-select.png",
+      "bytes": 2733,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/10s01a.pov",
+      "bytes": 882,
+      "status": "imported",
+      "sha256": "763581ed5b378158332188667a3cf45fc231a8254204222e74e6ec950424a681"
+    },
+    {
+      "name": "cubic-dvd/10s02a.pov",
+      "bytes": 663,
+      "status": "imported",
+      "sha256": "663048cf1362fb1be9726476cce85ecf421dae0595c6d641413f2a949dc64402"
+    },
+    {
+      "name": "cubic-dvd/04s01a.pov",
+      "bytes": 650,
+      "status": "imported",
+      "sha256": "fc01fb6ba069b6bea48d0701b904f3cc73c3cf870df2d3cd231e6f6b50a47207"
+    },
+    {
+      "name": "cubic-dvd/04s02a.pov",
+      "bytes": 672,
+      "status": "imported",
+      "sha256": "44d20ad2d9da3808e7564109f8fb7e3c9b610fcd41abee13f90378702b95df74"
+    },
+    {
+      "name": "cubic-dvd/16fixed.png",
+      "bytes": 54892,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/16fixed.pov",
+      "bytes": 715,
+      "status": "imported",
+      "sha256": "bcc41b299109c892f680658d8fc5334786289e3b159b62a9b306507e89c9f220"
+    },
+    {
+      "name": "cubic-dvd/makethumbs",
+      "bytes": 490,
+      "status": "imported",
+      "sha256": "646c69ac3a09e06b0ece1758c7cfd5f7cfcb82d9ebbcbd87668af2dcdabe4e4a"
+    },
+    {
+      "name": "cubic-dvd/12fixed.png",
+      "bytes": 38419,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/12fixed.pov",
+      "bytes": 763,
+      "status": "imported",
+      "sha256": "10450f557bb185ba4009a67435ad147eb8c9b9ec51ed2254a58e16ab8c84bc89"
+    },
+    {
+      "name": "cubic-dvd/04s03a.pov",
+      "bytes": 672,
+      "status": "imported",
+      "sha256": "5c73d73a37fb4d855ec7fae05db5de7306671e9e9fe8f9e6b9c7d318e9300bf6"
+    },
+    {
+      "name": "cubic-dvd/09fixed.png",
+      "bytes": 66316,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/09fixed.pov",
+      "bytes": 649,
+      "status": "imported",
+      "sha256": "678d8699ad403050a26b54f208779fa684d8df9efff6c375fecbacaab0a169e1"
+    },
+    {
+      "name": "cubic-dvd/05fixed.png",
+      "bytes": 55710,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/05fixed.pov",
+      "bytes": 688,
+      "status": "imported",
+      "sha256": "4fc94b3e0f152261adf072f210dac0185f10e74ce3c3a4641d12aa966bd0ff36"
+    },
+    {
+      "name": "cubic-dvd/01fixed.png",
+      "bytes": 78638,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/01fixed.pov",
+      "bytes": 686,
+      "status": "imported",
+      "sha256": "01d796481695e3e84b5a22a9a73534d26787790b15704bf461a115482368403f"
+    },
+    {
+      "name": "cubic-dvd/04s04a.pov",
+      "bytes": 673,
+      "status": "imported",
+      "sha256": "b95f904f20204e58fba3fc0eb987f9334900a419793349022551aec6625d39c6"
+    },
+    {
+      "name": "cubic-dvd/99s01a.pov",
+      "bytes": 2443,
+      "status": "imported",
+      "sha256": "48a4cbbdf72965947f20e4a5a64f208541ecf06cd4c5863950f4e90bafe68e3f"
+    },
+    {
+      "name": "cubic-dvd/19s01a.pov",
+      "bytes": 778,
+      "status": "imported",
+      "sha256": "cea5b63d9b1e32222e2350d902cb921a5fc6f21d832fd5ce84d90dbf49bfe19f"
+    },
+    {
+      "name": "cubic-dvd/99s02a.pov",
+      "bytes": 2443,
+      "status": "imported",
+      "sha256": "cb1cf76adf9f742a59b67b8df88eec25fbe65dd81b458a05faec1aa77de8aefd"
+    },
+    {
+      "name": "cubic-dvd/19s02a.pov",
+      "bytes": 683,
+      "status": "imported",
+      "sha256": "5531b57d50394388047486e599a701712662e6aefafc5cfa3a73024b06ea9ef4"
+    },
+    {
+      "name": "cubic-dvd/01s01a.sub.xml",
+      "bytes": 388,
+      "status": "imported",
+      "sha256": "f05b3b27341178cb094304d224683ae96705a5c83e582e7c6a5e61f5c82dc467"
+    },
+    {
+      "name": "cubic-dvd/99s03a.pov",
+      "bytes": 2443,
+      "status": "imported",
+      "sha256": "a2530a0ddcf2bab1378e41e94027823edddd349e0ccbde320bdb57181899f4f7"
+    },
+    {
+      "name": "cubic-dvd/12s01a.pov",
+      "bytes": 689,
+      "status": "imported",
+      "sha256": "c12a03a065cf51fcfe2b89055b288ad42dc2d08547947f478552cd7131455cf4"
+    },
+    {
+      "name": "cubic-dvd/dvd.xml",
+      "bytes": 13005,
+      "status": "imported",
+      "sha256": "ffc82a9cf73dd3626c1514f4bda349b15f81e862196734a3590023bab5acf37c"
+    },
+    {
+      "name": "cubic-dvd/menu-base.png",
+      "bytes": 21166,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/menu-base.svg",
+      "bytes": 7557,
+      "status": "imported",
+      "sha256": "166fc718c50d315485f46f83fefae2bf3b74e2791fa14eea6021d7728c52cd2f"
+    },
+    {
+      "name": "cubic-dvd/06s01a.pov",
+      "bytes": 833,
+      "status": "imported",
+      "sha256": "b8e51ee581cf076f8f89a48980f0b6af2fc115a0bef40b7460a4c522883969f9"
+    },
+    {
+      "name": "cubic-dvd/06s02a.pov",
+      "bytes": 675,
+      "status": "imported",
+      "sha256": "f11dffef557e1620cd125ae9abcaf74c5f4329a59588017e5f0c07b9f637a973"
+    },
+    {
+      "name": "cubic-dvd/06s03a.pov",
+      "bytes": 697,
+      "status": "imported",
+      "sha256": "6b3833ce2007a8c50137e2f421c14d2b668138ffce6af002db2f2716c87b21ee"
+    },
+    {
+      "name": "cubic-dvd/genrandom.pl",
+      "bytes": 811,
+      "status": "imported",
+      "sha256": "fadb34d8ff3f4bd801e0844d10ca21c5e2299bc18913cea3e5eab0926c794ccc"
+    },
+    {
+      "name": "cubic-dvd/index.html",
+      "bytes": 0,
+      "status": "omitted: symlink, hardlink, or special entry",
+      "link_target": "cubic-dvd.html"
+    },
+    {
+      "name": "cubic-dvd/makeanim",
+      "bytes": 1052,
+      "status": "imported",
+      "sha256": "2ceb37182d4a9637891e3324ffc99fd91dc5373456db5034833bf29f6897849a"
+    },
+    {
+      "name": "cubic-dvd/20s01a.pov",
+      "bytes": 739,
+      "status": "imported",
+      "sha256": "0f2fcae6e0cc6fa9a01b0a3eac7c0fc04422dac8ec04549d7da480eff8dca7c6"
+    },
+    {
+      "name": "cubic-dvd/20s02a.pov",
+      "bytes": 683,
+      "status": "imported",
+      "sha256": "dd25f8b5a10320c8fdcae1028028313f91dbb885e286bcf1a6249a811cc93ae3"
+    },
+    {
+      "name": "cubic-dvd/14s01a.pov",
+      "bytes": 816,
+      "status": "imported",
+      "sha256": "12713d15fff728f60a16a5d247b6f53130922d80852a25480a899a4b07e7def9"
+    },
+    {
+      "name": "cubic-dvd/20fixed.png",
+      "bytes": 55892,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/20fixed.pov",
+      "bytes": 724,
+      "status": "imported",
+      "sha256": "03ea6981c76affe2b36cf6133d06de4fb5850488f2833be99ddd4c6cc23708cc"
+    },
+    {
+      "name": "cubic-dvd/17fixed.png",
+      "bytes": 50813,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/17fixed.pov",
+      "bytes": 644,
+      "status": "imported",
+      "sha256": "e9d2dd6c960169898012d21acf886178cca92eda12bccc1eb076ef70a3a86f17"
+    },
+    {
+      "name": "cubic-dvd/08s01a.pov",
+      "bytes": 656,
+      "status": "imported",
+      "sha256": "40eeb42822715d026c5a099c7ea03778e63f8f1f1fdd6c1cb2301785c31ba124"
+    },
+    {
+      "name": "cubic-dvd/13fixed.png",
+      "bytes": 15695,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/13fixed.pov",
+      "bytes": 688,
+      "status": "imported",
+      "sha256": "4869e3ce1a724e77d93050ecb050f2b27cabe62ae9118c08dcdba737c9e0de93"
+    },
+    {
+      "name": "cubic-dvd/menu-1-small.png",
+      "bytes": 18811,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/06fixed.png",
+      "bytes": 60896,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/06fixed.pov",
+      "bytes": 752,
+      "status": "imported",
+      "sha256": "910057f891009153a82feaff5b27e2cc2af106f9d4748164819490886e3abd0d"
+    },
+    {
+      "name": "cubic-dvd/08s02a.pov",
+      "bytes": 682,
+      "status": "imported",
+      "sha256": "53d747ac2945fa5f4aaefb1095f8d824caf065c690cdd77a193dd15832967127"
+    },
+    {
+      "name": "cubic-dvd/02fixed.png",
+      "bytes": 71939,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/02fixed.pov",
+      "bytes": 857,
+      "status": "imported",
+      "sha256": "ec3c3d83f434156afc07e6495c1856589d003b762786cd344de139e4ac5fcb32"
+    },
+    {
+      "name": "cubic-dvd/animation.ini",
+      "bytes": 662,
+      "status": "imported",
+      "sha256": "05389faa10458cd10657e3038f312888151a4101ea81cf2ea61a8d10861dea05"
+    },
+    {
+      "name": "cubic-dvd/01s01a.pov",
+      "bytes": 652,
+      "status": "imported",
+      "sha256": "c3a30114e0e59d9ba67453e5bd95b58cfd4997e65e1b4618e56da8af500a1daa"
+    },
+    {
+      "name": "cubic-dvd/01s01a.srt",
+      "bytes": 177,
+      "status": "imported",
+      "sha256": "445a8c716b669077121ba2e8fdc40d310c6e8d47726b1d860663750871fcc195"
+    },
+    {
+      "name": "cubic-dvd/08s03a.pov",
+      "bytes": 678,
+      "status": "imported",
+      "sha256": "52688cee274e012e56289696ac30822a6147288577d3559c2665ace1fe10aed1"
+    },
+    {
+      "name": "cubic-dvd/01s02a.pov",
+      "bytes": 679,
+      "status": "imported",
+      "sha256": "771028eb2ed2244ba3ae48e31b45e876b17e08d88086ef9ac40693f617f13884"
+    },
+    {
+      "name": "cubic-dvd/01s03a.pov",
+      "bytes": 677,
+      "status": "imported",
+      "sha256": "215952554c327b965320de90859fa049bdb608d1880751f41f4c87eea93c86af"
+    },
+    {
+      "name": "cubic-dvd/16s01a.pov",
+      "bytes": 689,
+      "status": "imported",
+      "sha256": "9d8822546b03f4fa22cf839cb49c186b350fb52609965f4eb203862c4a4a919c"
+    },
+    {
+      "name": "cubic-dvd/menu-1.png",
+      "bytes": 116369,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/menu-2.png",
+      "bytes": 98384,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/menu-3.png",
+      "bytes": 96601,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/menu-4.png",
+      "bytes": 107036,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/menu-5.png",
+      "bytes": 88152,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/menu-6.png",
+      "bytes": 72024,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/menu-7.png",
+      "bytes": 91515,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/menu-8.png",
+      "bytes": 90114,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/menu-9.png",
+      "bytes": 100275,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/03s01a.pov",
+      "bytes": 651,
+      "status": "imported",
+      "sha256": "064429bbdd8f6ebc5d36d49e0c0254edeed597f34643d702ee6cfc7d9cd508c0"
+    },
+    {
+      "name": "cubic-dvd/03s02a.pov",
+      "bytes": 673,
+      "status": "imported",
+      "sha256": "bfacec58641ccbcabec87a79d6584a41b5d52378470ac1ce201f6ab3f62b4715"
+    },
+    {
+      "name": "cubic-dvd/03s03a.pov",
+      "bytes": 701,
+      "status": "imported",
+      "sha256": "09f99d404a826d3646d939a8f4352a6351bf6ac0efe82c7f003272b610103f92"
+    },
+    {
+      "name": "cubic-dvd/03s04a.pov",
+      "bytes": 705,
+      "status": "imported",
+      "sha256": "7e27c7da6d51f29fa3d712ac76c104861cd34ed21ae3e116ad5477b978e89f9c"
+    },
+    {
+      "name": "cubic-dvd/21fixed.png",
+      "bytes": 59235,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/21fixed.pov",
+      "bytes": 719,
+      "status": "imported",
+      "sha256": "557edc38c3ae30ef398f2d615e942e5c99fd6f301f7021543faa835fba902769"
+    },
+    {
+      "name": "cubic-dvd/18fixed.png",
+      "bytes": 55517,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/18fixed.pov",
+      "bytes": 694,
+      "status": "imported",
+      "sha256": "9da9320d0a60e489fd868bac30681d2f8955e75666ba9c71c3628ad51be9192a"
+    },
+    {
+      "name": "cubic-dvd/18s01a.pov",
+      "bytes": 779,
+      "status": "imported",
+      "sha256": "4f8cc3e09b48059d8350edfc6bc594fa1fb5194fd4f735694627b22490d82624"
+    },
+    {
+      "name": "cubic-dvd/14fixed.png",
+      "bytes": 45864,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/14fixed.pov",
+      "bytes": 776,
+      "status": "imported",
+      "sha256": "3d2bb17f66b331d0962ec147f28fefed7e8d23cafa4d3b7569c4cadc2ba137fc"
+    },
+    {
+      "name": "cubic-dvd/10fixed.png",
+      "bytes": 68389,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/10fixed.pov",
+      "bytes": 717,
+      "status": "imported",
+      "sha256": "3f8453ac1d60a7445963b7e1102aa8db0d21b4859363cb2956aef322559b144c"
+    },
+    {
+      "name": "cubic-dvd/07fixed.png",
+      "bytes": 21989,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/07fixed.pov",
+      "bytes": 793,
+      "status": "imported",
+      "sha256": "43d06b5fa57306eb6d57643ee29b7140f9524bf57ef826605d756ad579ea4282"
+    },
+    {
+      "name": "cubic-dvd/03fixed.png",
+      "bytes": 62241,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/03fixed.pov",
+      "bytes": 716,
+      "status": "imported",
+      "sha256": "4e3ba7808c542bb162d8f74103f74f07f0b7e006b024da1d6deb9dcdf6b66343"
+    },
+    {
+      "name": "cubic-dvd/static.ini",
+      "bytes": 662,
+      "status": "imported",
+      "sha256": "099ee91efca492a81dd07e4bb55d4976ab933844c59360d9f712150c74ff1cdf"
+    },
+    {
+      "name": "cubic-dvd/11s01a.pov",
+      "bytes": 640,
+      "status": "imported",
+      "sha256": "d8b09b593f85b4c195da383b05b36e24433b94435512f09dfcbaf41ae962e4e9"
+    },
+    {
+      "name": "cubic-dvd/menu-silence.ac3",
+      "bytes": 48128,
+      "status": "omitted: probable binary file"
+    },
+    {
+      "name": "cubic-dvd/11s02a.pov",
+      "bytes": 661,
+      "status": "imported",
+      "sha256": "37628d7c6e60b81946d628ce9b738400434da05e785d97047eeb1eae54a43743"
+    },
+    {
+      "name": "cubic-dvd/05s01a.pov",
+      "bytes": 869,
+      "status": "imported",
+      "sha256": "d7efcf558374facccbe20c479810cd1e6ac5a8c3bd60e1312637c93c1551807e"
+    },
+    {
+      "name": "cubic-dvd/11s03a.pov",
+      "bytes": 690,
+      "status": "imported",
+      "sha256": "c32b6800bf00e636dbb1d0b4e868d3494b72a2dbd46c8e2dfd8759c9efb4562a"
+    },
+    {
+      "name": "cubic-dvd/11s04a.pov",
+      "bytes": 776,
+      "status": "imported",
+      "sha256": "4b85d0671da69a2de0a916f96842ad511105f447e18aa3ed4ca040937254b93f"
+    },
+    {
+      "name": "cubic-dvd/11s05a.pov",
+      "bytes": 702,
+      "status": "imported",
+      "sha256": "be2d09529a4dbdb6ee0513f89298791c8ff18a8483fe6850d35a071922e33eca"
+    },
+    {
+      "name": "cubic-dvd/menu-highlight.png",
+      "bytes": 3217,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/menu-highlight.xml",
+      "bytes": 232,
+      "status": "imported",
+      "sha256": "262e0a1eef7c31cff1a5c264962235a1eeb49911b628fd4f945daced656384a0"
+    },
+    {
+      "name": "cubic-dvd/11s06a.pov",
+      "bytes": 690,
+      "status": "imported",
+      "sha256": "8d247a46693987573c502de9322196026f6ff5cd5f987aa2a5c444ee01982767"
+    },
+    {
+      "name": "cubic-dvd/fastanim.ini",
+      "bytes": 660,
+      "status": "imported",
+      "sha256": "a5dfcd62b3e1452e6fbf970719316a6b1a21c4543d90db0bc99c5a410db7e473"
+    },
+    {
+      "name": "cubic-dvd/cubic-dvd.html",
+      "bytes": 33306,
+      "status": "imported",
+      "sha256": "8d4e1fbf764039293c6f41e5e7b2c38a3696b04b87ecc3c73e5987ee66941170"
+    },
+    {
+      "name": "cubic-dvd/99fixed.png",
+      "bytes": 72225,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/99fixed.pov",
+      "bytes": 863,
+      "status": "imported",
+      "sha256": "a6f8a0697b49a1abebb1e430ee4934a41ef9715b6e053195a6021f6e08fdc73b"
+    },
+    {
+      "name": "cubic-dvd/13s01a.pov",
+      "bytes": 666,
+      "status": "imported",
+      "sha256": "7105125cbb5c00f478ffd9c4246c4262c9f0c01356afbdfff2d18d19b88b9f70"
+    },
+    {
+      "name": "cubic-dvd/13s02a.pov",
+      "bytes": 723,
+      "status": "imported",
+      "sha256": "979cca04e14c62f7d315bd3a4a9e216be9ff5094bc639ef122d76e6dd6b977d6"
+    },
+    {
+      "name": "cubic-dvd/07s01a.pov",
+      "bytes": 674,
+      "status": "imported",
+      "sha256": "8a53e539bc644bf76f6f5d0df5490bcd72a19f2dd4beffab75802ba2706f6ae0"
+    },
+    {
+      "name": "cubic-dvd/13s03a.pov",
+      "bytes": 802,
+      "status": "imported",
+      "sha256": "09e658ff965519533074d3d84e08f75c8be4cfcb95b18ac8eba4429fc5f5e7da"
+    },
+    {
+      "name": "cubic-dvd/07s02a.pov",
+      "bytes": 670,
+      "status": "imported",
+      "sha256": "6ddead9321d6a3e8d07037914e213c37d643d50869d67d6335894246410bcb27"
+    },
+    {
+      "name": "cubic-dvd/07s03a.pov",
+      "bytes": 660,
+      "status": "imported",
+      "sha256": "c07c66318ef19601c4c6bb124a7aa76bc181f80daae0dcc55d62b37c8947d058"
+    },
+    {
+      "name": "cubic-dvd/introanim.ini",
+      "bytes": 661,
+      "status": "imported",
+      "sha256": "57af1f45539f61775ecb8876150093795af26e91f170970ab0535aae45f409de"
+    },
+    {
+      "name": "cubic-dvd/19fixed.png",
+      "bytes": 58852,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/19fixed.pov",
+      "bytes": 693,
+      "status": "imported",
+      "sha256": "b6dae47dbe02883237942b5a9383b3eec84476e2f861f3002234ff4a74a985f1"
+    },
+    {
+      "name": "cubic-dvd/15fixed.png",
+      "bytes": 46474,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/15fixed.pov",
+      "bytes": 732,
+      "status": "imported",
+      "sha256": "e498235e985abfe40af1f2e7b6930a32b6e39aa27419484baf2ab9e6c23addda"
+    },
+    {
+      "name": "cubic-dvd/11fixed.png",
+      "bytes": 37389,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/11fixed.pov",
+      "bytes": 719,
+      "status": "imported",
+      "sha256": "f7450e3e0fb0c80ec124fbb9549189deb040cf24405dbf79d91139300926b83c"
+    },
+    {
+      "name": "cubic-dvd/08fixed.png",
+      "bytes": 76639,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/08fixed.pov",
+      "bytes": 775,
+      "status": "imported",
+      "sha256": "86805bd716346f48b087e72269787d1509aaf30bfb25562e1e1188e20664fc21"
+    },
+    {
+      "name": "cubic-dvd/04fixed.png",
+      "bytes": 51096,
+      "status": "omitted: generated media or binary"
+    },
+    {
+      "name": "cubic-dvd/04fixed.pov",
+      "bytes": 711,
+      "status": "imported",
+      "sha256": "fede78369eb717e774ac537e700b364109e1a6b0864aa7b9a83fd956cd0d88d6"
+    },
+    {
+      "name": "cubic-dvd/21s01a.pov",
+      "bytes": 640,
+      "status": "imported",
+      "sha256": "2d9f6ab44d5ba523d583007ac85bf39c8b544bc4f272fde1e58bc475ca19751e"
+    },
+    {
+      "name": "cubic-dvd/21s02a.pov",
+      "bytes": 661,
+      "status": "imported",
+      "sha256": "3fedf30615f09bfaf26135c8e0d22eb70150314b2ad4fad029b66f4a09bcc603"
+    },
+    {
+      "name": "cubic-dvd/15s01a.pov",
+      "bytes": 652,
+      "status": "imported",
+      "sha256": "53dfd7c50fbd253615f8e90a49498dc214d89f54fdac98b9967c5d409ce7ee1e"
+    },
+    {
+      "name": "cubic-dvd/21s03a.pov",
+      "bytes": 690,
+      "status": "imported",
+      "sha256": "5dd7e7d1e92612de4b70f6e5f135575490599b58141fbed3dcf74d2e7a16ca43"
+    },
+    {
+      "name": "cubic-dvd/15s02a.pov",
+      "bytes": 674,
+      "status": "imported",
+      "sha256": "616a84f9f186d5d8a9c12f502977e6471bcd4109bc660fda629e52fd0322c460"
+    },
+    {
+      "name": "cubic-dvd/21s04a.pov",
+      "bytes": 690,
+      "status": "imported",
+      "sha256": "d209faf6f236fb78fd8defdf143544924f38f6a02c04bb0eedf48e979c684dc1"
+    },
+    {
+      "name": "cubic-dvd/09s01a.pov",
+      "bytes": 688,
+      "status": "imported",
+      "sha256": "935a1331b76ff6ebcf71cd79a83f79ae49daee9704ae7feae12891a70350df10"
+    },
+    {
+      "name": "cubic-dvd/21s05a.pov",
+      "bytes": 702,
+      "status": "imported",
+      "sha256": "45a2ae0cf0e5e45c7c1feb98d596f52de2564bfe39f07f224e087b6cc2bfea42"
+    }
+  ]
+}

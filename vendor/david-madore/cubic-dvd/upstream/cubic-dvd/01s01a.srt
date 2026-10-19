@@ -1,0 +1,12 @@
+1
+00:00:02,500 --> 00:00:06,000
+A smooth cubic surface.
+
+1
+00:00:06,500 --> 00:00:11,000
+This one has 15 real lines
+
+1
+00:00:11,500 --> 00:00:16,000
+and 6 real Eckardt points.
+

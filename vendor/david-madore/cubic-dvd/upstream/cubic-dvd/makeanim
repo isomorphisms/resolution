@@ -1,0 +1,36 @@
+#! /bin/sh
+
+if [ "x$1" = "x" ]; then
+	echo "Missing argument (e.g. $0 01s01a)" >&2
+	exit 1
+fi
+
+rm -f "$1FRM"*.png
+
+perl -e 'for ($i=0;$i<1500;$i++) { symlink(sprintf("'"$1"'%03d.png",($i%300)+1),sprintf("'"$1"'FRM%04d.png",$i)); }'
+
+#/opt/MPlayer/bin/mencoder -ovc lavc -of mpeg -mpegopts format=dvd \
+#-vf harddup -lavcopts vcodec=mpeg2video:vrc_buf_size=1835:\
+#vrc_maxrate=8000:vbitrate=7500:keyint=15:acodec=ac3:abitrate=192:\
+#aspect=4/3 -o "$1.mpg" -mf fps=25 "mf://$1FRM*.png"
+
+png2yuv -v 1 -f 25 -I p -j "$1FRM%04d.png" | \
+mpeg2enc -v 1 -f 8 -a 2 -q 4 -o "$1.m2v"
+
+png2yuv -v 1 -f 25 -I p -n 300 -j "$1FRM%04d.png" | \
+mpeg2enc -v 1 -f 8 -a 2 -q 4 -o "$1.short.mpg"
+
+rm -f "$1FRM"*.png
+
+if [ -e /tmp/1minutesilence.ac3 ]; then
+    :
+else
+    rm -f /tmp/1minutesilence.wav
+    dd if=/dev/zero bs=192000 count=60 | \
+    sox -t raw -s -w -c 2 -r 48000 - -t wav /tmp/1minutesilence.wav
+    ffmpeg -i /tmp/1minutesilence.wav -ab 64 -ar 48000 -ac 2 /tmp/1minutesilence.ac3
+fi
+
+mplex -f8 -o "$1.mpg" "$1.m2v" /tmp/1minutesilence.ac3
+
+rm -f "$1.m2v"

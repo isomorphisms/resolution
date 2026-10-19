@@ -1,0 +1,87 @@
+name: Render David Madore original E6 POV-Ray movie
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/madore-e6-povray.yml
+      - scripts/render-madore-e6-povray.sh
+      - scripts/verify-e6-render.py
+      - vendor/david-madore/cubic-dvd/upstream/cubic-dvd/03s01a.pov
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  original-povray-film:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    steps:
+      - name: Check out original source, attribution and scripts
+        uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09
+        with:
+          ref: ${{ github.ref_name }}
+          persist-credentials: true
+
+      - name: Install POV-Ray 3.7 and movie codecs
+        shell: bash
+        run: |
+          set -euo pipefail
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends povray ffmpeg
+          command -v povray
+          command -v ffmpeg
+          command -v ffprobe
+
+      - name: Verify upstream file SHA-256 before rendering
+        shell: bash
+        run: |
+          set -euo pipefail
+          bash -n scripts/render-madore-e6-povray.sh
+          python3 -m py_compile scripts/verify-e6-render.py
+          python3 - <<'PY'
+          import hashlib, json, pathlib
+          root = pathlib.Path('vendor/david-madore/cubic-dvd')
+          m = json.loads((root/'SOURCE-MANIFEST.json').read_text())
+          f = root/'upstream/cubic-dvd/03s01a.pov'
+          source_sha = hashlib.sha256(f.read_bytes()).hexdigest()
+          manifest_entry = next(e for e in m['entries'] if e['name'] == 'cubic-dvd/03s01a.pov')
+          assert source_sha == manifest_entry['sha256'], 'Original Madore source changed'
+          assert m['original_author'] == 'David A. Madore'
+          print('Original scene verified:', source_sha)
+          PY
+
+      - name: Render the real POV-Ray scene to an actual movie
+        shell: bash
+        run: bash scripts/render-madore-e6-povray.sh renders/madore-e6
+
+      - name: Publish MP4, animated GIF, PNG still and evidence
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- renders/madore-e6/madore-e6-povray.mp4 \
+            renders/madore-e6/madore-e6-povray.gif \
+            renders/madore-e6/madore-e6-povray.png \
+            renders/madore-e6/madore-e6-povray-manifest.json
+          if git diff --cached --quiet; then
+            echo "Verified movie is unchanged."
+            exit 0
+          fi
+          git commit -m "Publish tested 32-frame Madore original E6 POV-Ray movie"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
+
+      - name: Retain original rendered frame evidence
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: madore-e6-povray-frame-evidence
+          path: |
+            renders/madore-e6/frames/
+            renders/madore-e6/madore-e6-povray.mp4
+            renders/madore-e6/madore-e6-povray.gif
+            renders/madore-e6/madore-e6-povray-manifest.json
+          if-no-files-found: warn
+          retention-days: 14

@@ -1,0 +1,296 @@
+<dvdauthor dest="DVD">
+
+  <vmgm>
+    <menus>
+      <video format="pal" aspect="4:3" />
+      <pgc>
+        <pre> g1=1; g2=0; subtitle=0; </pre>
+        <vob file="MPEG/intro.mpg" pause="2" />
+        <post> jump titleset 1 menu; </post>
+      </pgc>
+    </menus>
+  </vmgm>
+
+  <titleset>
+
+    <menus>
+
+      <video format="pal" aspect="4:3" />
+
+      <!-- g1 stores current menu (1 through 9), g2 stores current button -->
+
+      <pgc>
+        <!-- A fictitious menu used for multiplexing -->
+        <pre>
+          if (g1==1) jump menu 2;
+          if (g1==2) jump menu 3;
+          if (g1==3) jump menu 4;
+          if (g1==4) jump menu 5;
+          if (g1==5) jump menu 6;
+          if (g1==6) jump menu 7;
+          if (g1==7) jump menu 8;
+          if (g1==8) jump menu 9;
+          if (g1==9) jump menu 10;
+          jump menu 2;
+        </pre>
+      </pgc>
+
+      <pgc>
+        <pre> g1=1; if (g2 ge 1024) button=g2; </pre>
+        <button> g2=button; jump title 55; </button>
+        <button> g2=button; jump title 1; </button>
+        <button> g2=button; jump title 2; </button>
+        <button> g2=button; jump title 3; </button>
+        <button> g2=button; jump title 4; </button>
+        <button> g2=button; jump title 5; </button>
+        <button> g2=button; jump title 6; </button>
+        <button> g2=button; jump menu 10; </button>
+        <button> g2=button; jump menu 3; </button>
+        <vob file="MPEG/menu-1.mpg" />
+        <post> jump cell 1; </post>
+      </pgc>
+
+      <pgc>
+        <pre> g1=2; if (g2 ge 1024) button=g2; </pre>
+        <button> g2=button; jump title 55; </button>
+        <button> g2=button; jump title 7; </button>
+        <button> g2=button; jump title 8; </button>
+        <button> g2=button; jump title 9; </button>
+        <button> g2=button; jump title 10; </button>
+        <button> g2=button; jump title 11; </button>
+        <button> g2=button; jump title 12; </button>
+        <button> g2=button; jump menu 2; </button>
+        <button> g2=button; jump menu 4; </button>
+        <vob file="MPEG/menu-2.mpg" />
+        <post> jump cell 1; </post>
+      </pgc>
+
+      <pgc>
+        <pre> g1=3; if (g2 ge 1024) button=g2; </pre>
+        <button> g2=button; jump title 55; </button>
+        <button> g2=button; jump title 13; </button>
+        <button> g2=button; jump title 14; </button>
+        <button> g2=button; jump title 15; </button>
+        <button> g2=button; jump title 16; </button>
+        <button> g2=button; jump title 17; </button>
+        <button> g2=button; jump title 18; </button>
+        <button> g2=button; jump menu 3; </button>
+        <button> g2=button; jump menu 5; </button>
+        <vob file="MPEG/menu-3.mpg" />
+        <post> jump cell 1; </post>
+      </pgc>
+
+      <pgc>
+        <pre> g1=4; if (g2 ge 1024) button=g2; </pre>
+        <button> g2=button; jump title 55; </button>
+        <button> g2=button; jump title 19; </button>
+        <button> g2=button; jump title 20; </button>
+        <button> g2=button; jump title 21; </button>
+        <button> g2=button; jump title 22; </button>
+        <button> g2=button; jump title 23; </button>
+        <button> g2=button; jump title 24; </button>
+        <button> g2=button; jump menu 4; </button>
+        <button> g2=button; jump menu 6; </button>
+        <vob file="MPEG/menu-4.mpg" />
+        <post> jump cell 1; </post>
+      </pgc>
+
+      <pgc>
+        <pre> g1=5; if (g2 ge 1024) button=g2; </pre>
+        <button> g2=button; jump title 55; </button>
+        <button> g2=button; jump title 25; </button>
+        <button> g2=button; jump title 26; </button>
+        <button> g2=button; jump title 27; </button>
+        <button> g2=button; jump title 28; </button>
+        <button> g2=button; jump title 29; </button>
+        <button> g2=button; jump title 30; </button>
+        <button> g2=button; jump menu 5; </button>
+        <button> g2=button; jump menu 7; </button>
+        <vob file="MPEG/menu-5.mpg" />
+        <post> jump cell 1; </post>
+      </pgc>
+
+      <pgc>
+        <pre> g1=6; if (g2 ge 1024) button=g2; </pre>
+        <button> g2=button; jump title 55; </button>
+        <button> g2=button; jump title 31; </button>
+        <button> g2=button; jump title 32; </button>
+        <button> g2=button; jump title 33; </button>
+        <button> g2=button; jump title 34; </button>
+        <button> g2=button; jump title 35; </button>
+        <button> g2=button; jump title 36; </button>
+        <button> g2=button; jump menu 6; </button>
+        <button> g2=button; jump menu 8; </button>
+        <vob file="MPEG/menu-6.mpg" />
+        <post> jump cell 1; </post>
+      </pgc>
+
+      <pgc>
+        <pre> g1=7; if (g2 ge 1024) button=g2; </pre>
+        <button> g2=button; jump title 55; </button>
+        <button> g2=button; jump title 37; </button>
+        <button> g2=button; jump title 38; </button>
+        <button> g2=button; jump title 39; </button>
+        <button> g2=button; jump title 40; </button>
+        <button> g2=button; jump title 41; </button>
+        <button> g2=button; jump title 42; </button>
+        <button> g2=button; jump menu 7; </button>
+        <button> g2=button; jump menu 9; </button>
+        <vob file="MPEG/menu-7.mpg" />
+        <post> jump cell 1; </post>
+      </pgc>
+
+      <pgc>
+        <pre> g1=8; if (g2 ge 1024) button=g2; </pre>
+        <button> g2=button; jump title 55; </button>
+        <button> g2=button; jump title 43; </button>
+        <button> g2=button; jump title 44; </button>
+        <button> g2=button; jump title 45; </button>
+        <button> g2=button; jump title 46; </button>
+        <button> g2=button; jump title 47; </button>
+        <button> g2=button; jump title 48; </button>
+        <button> g2=button; jump menu 8; </button>
+        <button> g2=button; jump menu 10; </button>
+        <vob file="MPEG/menu-8.mpg" />
+        <post> jump cell 1; </post>
+      </pgc>
+
+      <pgc>
+        <pre> g1=9; if (g2 ge 1024) button=g2; </pre>
+        <button> g2=button; jump title 55; </button>
+        <button> g2=button; jump title 49; </button>
+        <button> g2=button; jump title 50; </button>
+        <button> g2=button; jump title 51; </button>
+        <button> g2=button; jump title 52; </button>
+        <button> g2=button; jump title 53; </button>
+        <button> g2=button; jump title 54; </button>
+        <button> g2=button; jump menu 9; </button>
+        <button> g2=button; jump menu 2; </button>
+        <vob file="MPEG/menu-9.mpg" />
+        <post> jump cell 1; </post>
+      </pgc>
+
+    </menus>
+
+    <titles>
+
+      <video format="pal" aspect="4:3" />
+
+      <pgc> <vob file="MPEG/01s01a.mpg" /> <post> jump cell 1; </post> </pgc>
+      <pgc> <vob file="MPEG/01s02a.mpg" /> <post> jump cell 1; </post> </pgc>
+      <pgc> <vob file="MPEG/01s03a.mpg" /> <post> jump cell 1; </post> </pgc>
+      <pgc> <vob file="MPEG/02s01a.mpg" /> <post> jump cell 1; </post> </pgc>
+      <pgc> <vob file="MPEG/03s01a.mpg" /> <post> jump cell 1; </post> </pgc>
+      <pgc> <vob file="MPEG/03s02a.mpg" /> <post> jump cell 1; </post> </pgc>
+      <pgc> <vob file="MPEG/03s03a.mpg" /> <post> jump cell 1; </post> </pgc>
+      <pgc> <vob file="MPEG/03s04a.mpg" /> <post> jump cell 1; </post> </pgc>
+      <pgc> <vob file="MPEG/04s01a.mpg" /> <post> jump cell 1; </post> </pgc>
+      <pgc> <vob file="MPEG/04s02a.mpg" /> <post> jump cell 1; </post> </pgc>
+      <pgc> <vob file="MPEG/04s03a.mpg" /> <post> jump cell 1; </post> </pgc>
+      <pgc> <vob file="MPEG/04s04a.mpg" /> <post> jump cell 1; </post> </pgc>
+      <pgc> <vob file="MPEG/05s01a.mpg" /> <post> jump cell 1; </post> </pgc>
+      <pgc> <vob file="MPEG/06s01a.mpg" /> <post> jump cell 1; </post> </pgc>
+      <pgc> <vob file="MPEG/06s02a.mpg" /> <post> jump cell 1; </post> </pgc>
+      <pgc> <vob file="MPEG/06s03a.mpg" /> <post> jump cell 1; </post> </pgc>
+      <pgc> <vob file="MPEG/07s01a.mpg" /> <post> jump cell 1; </post> </pgc>
+      <pgc> <vob file="MPEG/07s02a.mpg" /> <post> jump cell 1; </post> </pgc>
+      <pgc> <vob file="MPEG/07s03a.mpg" /> <post> jump cell 1; </post> </pgc>
+      <pgc> <vob file="MPEG/08s01a.mpg" /> <post> jump cell 1; </post> </pgc>
+      <pgc> <vob file="MPEG/08s02a.mpg" /> <post> jump cell 1; </post> </pgc>
+      <pgc> <vob file="MPEG/08s03a.mpg" /> <post> jump cell 1; </post> </pgc>
+      <pgc> <vob file="MPEG/09s01a.mpg" /> <post> jump cell 1; </post> </pgc>
+      <pgc> <vob file="MPEG/10s01a.mpg" /> <post> jump cell 1; </post> </pgc>
+      <pgc> <vob file="MPEG/10s02a.mpg" /> <post> jump cell 1; </post> </pgc>
+      <pgc> <vob file="MPEG/11s01a.mpg" /> <post> jump cell 1; </post> </pgc>
+      <pgc> <vob file="MPEG/11s02a.mpg" /> <post> jump cell 1; </post> </pgc>
+      <pgc> <vob file="MPEG/11s03a.mpg" /> <post> jump cell 1; </post> </pgc>
+      <pgc> <vob file="MPEG/11s04a.mpg" /> <post> jump cell 1; </post> </pgc>
+      <pgc> <vob file="MPEG/11s05a.mpg" /> <post> jump cell 1; </post> </pgc>
+      <pgc> <vob file="MPEG/11s06a.mpg" /> <post> jump cell 1; </post> </pgc>
+      <pgc> <vob file="MPEG/12s01a.mpg" /> <post> jump cell 1; </post> </pgc>
+      <pgc> <vob file="MPEG/13s01a.mpg" /> <post> jump cell 1; </post> </pgc>
+      <pgc> <vob file="MPEG/13s02a.mpg" /> <post> jump cell 1; </post> </pgc>
+      <pgc> <vob file="MPEG/13s03a.mpg" /> <post> jump cell 1; </post> </pgc>
+      <pgc> <vob file="MPEG/14s01a.mpg" /> <post> jump cell 1; </post> </pgc>
+      <pgc> <vob file="MPEG/15s01a.mpg" /> <post> jump cell 1; </post> </pgc>
+      <pgc> <vob file="MPEG/15s02a.mpg" /> <post> jump cell 1; </post> </pgc>
+      <pgc> <vob file="MPEG/16s01a.mpg" /> <post> jump cell 1; </post> </pgc>
+      <pgc> <vob file="MPEG/17s01a.mpg" /> <post> jump cell 1; </post> </pgc>
+      <pgc> <vob file="MPEG/17s02a.mpg" /> <post> jump cell 1; </post> </pgc>
+      <pgc> <vob file="MPEG/18s01a.mpg" /> <post> jump cell 1; </post> </pgc>
+      <pgc> <vob file="MPEG/19s01a.mpg" /> <post> jump cell 1; </post> </pgc>
+      <pgc> <vob file="MPEG/19s02a.mpg" /> <post> jump cell 1; </post> </pgc>
+      <pgc> <vob file="MPEG/20s01a.mpg" /> <post> jump cell 1; </post> </pgc>
+      <pgc> <vob file="MPEG/20s02a.mpg" /> <post> jump cell 1; </post> </pgc>
+      <pgc> <vob file="MPEG/21s01a.mpg" /> <post> jump cell 1; </post> </pgc>
+      <pgc> <vob file="MPEG/21s02a.mpg" /> <post> jump cell 1; </post> </pgc>
+      <pgc> <vob file="MPEG/21s03a.mpg" /> <post> jump cell 1; </post> </pgc>
+      <pgc> <vob file="MPEG/21s04a.mpg" /> <post> jump cell 1; </post> </pgc>
+      <pgc> <vob file="MPEG/21s05a.mpg" /> <post> jump cell 1; </post> </pgc>
+      <pgc> <vob file="MPEG/99s01a.mpg" /> <post> jump cell 1; </post> </pgc>
+      <pgc> <vob file="MPEG/99s02a.mpg" /> <post> jump cell 1; </post> </pgc>
+      <pgc> <vob file="MPEG/99s03a.mpg" /> <post> jump cell 1; </post> </pgc>
+
+      <pgc>
+        <vob file="MPEG/01s01a.mpg" />
+        <vob file="MPEG/01s02a.mpg" />
+        <vob file="MPEG/01s03a.mpg" />
+        <vob file="MPEG/02s01a.mpg" />
+        <vob file="MPEG/03s01a.mpg" />
+        <vob file="MPEG/03s02a.mpg" />
+        <vob file="MPEG/03s03a.mpg" />
+        <vob file="MPEG/03s04a.mpg" />
+        <vob file="MPEG/04s01a.mpg" />
+        <vob file="MPEG/04s02a.mpg" />
+        <vob file="MPEG/04s03a.mpg" />
+        <vob file="MPEG/04s04a.mpg" />
+        <vob file="MPEG/05s01a.mpg" />
+        <vob file="MPEG/06s01a.mpg" />
+        <vob file="MPEG/06s02a.mpg" />
+        <vob file="MPEG/06s03a.mpg" />
+        <vob file="MPEG/07s01a.mpg" />
+        <vob file="MPEG/07s02a.mpg" />
+        <vob file="MPEG/07s03a.mpg" />
+        <vob file="MPEG/08s01a.mpg" />
+        <vob file="MPEG/08s02a.mpg" />
+        <vob file="MPEG/08s03a.mpg" />
+        <vob file="MPEG/09s01a.mpg" />
+        <vob file="MPEG/10s01a.mpg" />
+        <vob file="MPEG/10s02a.mpg" />
+        <vob file="MPEG/11s01a.mpg" />
+        <vob file="MPEG/11s02a.mpg" />
+        <vob file="MPEG/11s03a.mpg" />
+        <vob file="MPEG/11s04a.mpg" />
+        <vob file="MPEG/11s05a.mpg" />
+        <vob file="MPEG/11s06a.mpg" />
+        <vob file="MPEG/12s01a.mpg" />
+        <vob file="MPEG/13s01a.mpg" />
+        <vob file="MPEG/13s02a.mpg" />
+        <vob file="MPEG/13s03a.mpg" />
+        <vob file="MPEG/14s01a.mpg" />
+        <vob file="MPEG/15s01a.mpg" />
+        <vob file="MPEG/15s02a.mpg" />
+        <vob file="MPEG/16s01a.mpg" />
+        <vob file="MPEG/17s01a.mpg" />
+        <vob file="MPEG/17s02a.mpg" />
+        <vob file="MPEG/18s01a.mpg" />
+        <vob file="MPEG/19s01a.mpg" />
+        <vob file="MPEG/19s02a.mpg" />
+        <vob file="MPEG/20s01a.mpg" />
+        <vob file="MPEG/20s02a.mpg" />
+        <vob file="MPEG/21s01a.mpg" />
+        <vob file="MPEG/21s02a.mpg" />
+        <vob file="MPEG/21s03a.mpg" />
+        <vob file="MPEG/21s04a.mpg" />
+        <vob file="MPEG/21s05a.mpg" />
+        <vob file="MPEG/99s01a.mpg" />
+        <vob file="MPEG/99s02a.mpg" />
+        <vob file="MPEG/99s03a.mpg" />
+        <post> jump cell 1; </post>
+      </pgc>
+
+    </titles>
+
+  </titleset>
+
+</dvdauthor>

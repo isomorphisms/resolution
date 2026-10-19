@@ -97,12 +97,40 @@ Status: **bibliographic record and publisher extracts checked**. The papers them
 
 ### Cubic-surface films
 
+- **[Special thanks to David A. Madore, original source links, and source-code attribution rules](../ACKNOWLEDGMENTS.md)**
 - *The Cubic Surfaces DVD*
 - http://www.madore.org/cubic-dvd/
 
-Status: **primary project page read**, including the complete 54-film index, technical format, deformation timing, lighting, clipping convention, source availability, and public-domain statement.
+Status: **primary project page read**, including the complete 54-film index, technical format, deformation timing, lighting, clipping convention, source availability, and public-domain statement. **Original 2006 POV-Ray and production source has also been acquired and vendored:** [94 original source files](../vendor/david-madore/cubic-dvd/upstream/cubic-dvd/), [the complete original tarball](../vendor/david-madore/cubic-dvd/original/cubic-dvd.tar.gz), and [a source SHA-256 and member manifest](../vendor/david-madore/cubic-dvd/SOURCE-MANIFEST.json). The mathematical parameters in individual .pov files still require a systematic reading.
+
+The linked [*Cubic surfaces* YouTube playlist](https://www.youtube.com/playlist?list=PL1AE045877D932E6A) has **32 verified video-title/ID pairs** in order; see the [complete 32-item index](../notes/08-cubic-surfaces-youtube-playlist.md). Playlist metadata was checked on 2026-10-09. The YouTube clip descriptions include an error for the Cayley cubic: the correct singularities are **four A₁**, not the “four A4” printed in that one description.
 
 The films are deformations, rotations, and real implicit-surface views. They are not footage of minimal resolutions.
+
+### Spherical 4-polytope navigation films
+
+- 120-cell/600-cell/24-cell YouTube playlist supplied by the user: https://www.youtube.com/playlist?list=PL09DF17B94CA3C6FD
+- David A. Madore, *Naviguons dans des pavages de la 3-sphère* (2010): http://www.madore.org/~david/weblog/d.2010-11-12.1808.html
+- David A. Madore, *Affichage de l'hémisphère « trans » de la 3-sphère* (2010): http://www.madore.org/~david/weblog/d.2010-11-14.1809.html
+- Original Perl-script description (public domain): http://www.madore.org/~david/programs/programs.html
+- High-quality movie directory with five named AVI files: http://www.madore.org/~david/math/4polytopes/
+
+Status: **author's notes, video description and movie directory read**. The live YouTube playlist's current complete item list, ordering, and the Perl source's direct download URL have not been independently established. Gnomonic projection, the observer's great-circle navigation, and the near/far hemispheres are attributable to Madore.
+
+**The direct mathematical bridge to this repository:** the 120-cell decomposes the universal cover of the Poincaré sphere, which is the link of the \(E_8\) surface singularity and the boundary of its negative-\(E_8\) plumbing. Sources checked:
+
+- **Robion C. Kirby** and **Martin G. Scharlemann**, *Eight Faces of the Poincaré Homology 3-Sphere* (1979): https://math.berkeley.edu/~kirby/papers/Kirby%20and%20Scharlemann%20-%20Eight%20faces%20of%20the%20Poincar%C3%A9%20homology%203-sphere%20-%20MR0537730.pdf
+- **Laurentiu Maxim**, *Notes on Vanishing Cycles and Applications*, Example 2.22: https://people.math.wisc.edu/~maxim/vanishing.pdf
+- **John Stillwell**, *The Story of the 120-Cell*: https://www.ams.org/notices/200101/fea-stillwell.pdf
+
+See [the detailed geometry and \(E_8\)-link notes](../notes/06-david-madore-s3-polytopes.md). Do **not** attribute the proposed resolution-movie extension to Madore; he made spherical-navigation films, not that extension.
+
+### Individual DVD video: `A₅ → A₄`
+
+- David A. Madore, *Cubic surface: deformation of an A5 singularity to an A4 singularity*: https://www.youtube.com/watch?v=VDaEZpKbYqQ
+- Entry 31 of 54 on the DVD index. The video description identifies the special `A₅` surface at 3 s and 9 s; most of the loop shows `A₄`.
+- A local `uv+w^6+t w^5=0` model is a **separate illustrative calculation** in [the Madore note](../notes/03-david-madore.md), not the verified cubic equation in the video.
+- Status: **video title/description and Madore's DVD index checked; video frames and original POV-Ray source not independently examined**.
 
 ### Character sounds
 
@@ -154,7 +182,27 @@ Status: **video metadata and description checked; video audio and linked thread 
 
 Status: **video metadata and description checked; animation frames, production code, and transcript not independently inspected**. The description gives twelve icosahedral vertices `(0,±1,±φ)`, `(±1,±φ,0)`, `(±φ,0,±1)` and describes grayscale slices of the three-dimensional transform of point masses. It also accidentally says “dodecahedron”; the coordinates are icosahedral. The exact cosine formula and renderer/audio proposals in [the dedicated note](../notes/07-fourier-icosahedron.md) are independent mathematical deductions, not asserted to be Madore's implementation.
 
-## 5. Attribution trail
+### E₈ Voronoi moving cross-sections
+
+- David A. Madore, *Voronoi cells of the E8 lattice: a random three-dimensional cross-section*: https://www.youtube.com/watch?v=VSAnezNAjLg
+- Madore's separate interactive E₈ root-system viewer: https://www.madore.org/~david/math/e8w.html
+- Mathieu Dutour Sikirić, David Madore, Philippe Moustrou, and Frank Vallentin, *Coloring the Voronoi tessellation of lattices*: https://arxiv.org/abs/1907.09751
+
+Status: **video description read**, including 240 Voronoi facets, 19,440 vertices, the 2D-frame/1D-time section, three extra color directions, and midpoint symmetry. **Frames and author source code not independently checked.** The nearest-point and power-diagram method in [07-e8-voronoi-slices.md](../notes/07-e8-voronoi-slices.md) is a mathematical reconstruction, **not a claim about Madore's implementation**. The four-author coloring paper is a related reference, not an identified source for the film's colors.
+
+## 5. Richard E. Borcherds — an explicit E₈ resolution
+
+- *Algebraic geometry 39: Du Val singularities* (2020):
+  https://www.youtube.com/watch?v=s2LYtd_UPY8
+- Independent catalogue: https://mathvideos.org/2020/richard-borcherds-algebraic-geometry-xxxix/
+- Detailed notes and rederived equations: [`../notes/06-richard-borcherds-du-val.md`](../notes/06-richard-borcherds-du-val.md)
+- Closely related lectures: 34–35 (*Blowing up a point*, *More on blowups*); 37–38 (*Singular points*, *The Zariski tangent space*); 40 (*Examples of resolutions*).
+
+Status: **lecture transcript examined; substitutions rederived**. The automatic transcript contains symbol and name errors, so the mathematical equations in our notes were checked by substitution rather than transcribed verbatim. No claim to have checked the on-screen handwriting frame by frame. In particular, the A₁ and D₄ residual singularities and three A₁ points over D₄ can be derived from those equations.
+
+This lecture gives an explicit blowup computation; it is **not** one of David A. Madore's rendered surface movies. Its ordinary point-blowup sequence provides concrete input for a true resolution animation, while the full exceptional-intersection ledger remains to be completed.
+
+## 6. Attribution trail
 
 Names that should remain visible as the project grows:
 
@@ -168,11 +216,12 @@ Names that should remain visible as the project grows:
 - **Fritz Peter** — Peter–Weyl theory;
 - **David Eisenbud** — immediate commutative-algebra exposition used here;
 - **Miles Reid** — immediate surface-singularity exposition used here;
-- **David A. Madore** — films and sound experiments used as design references.
+- **David A. Madore** — films and sound experiments used as design references;
+- **Richard E. Borcherds** — explicit E₈ point-blowup computation in algebraic geometry lecture 39.
 
 When a later note relies on a joint paper, credit every author rather than attaching the result only to the best-known name.
 
-## 6. Copyright and vendoring
+## 7. Copyright and vendoring
 
 - Summarize copyrighted books and papers; do not paste long passages.
 - Link Reid's author-posted PDFs unless a redistribution license is verified.
@@ -180,9 +229,9 @@ When a later note relies on a joint paper, credit every author rather than attac
 - Madore explicitly placed the Cubic Surfaces DVD, source, and related material in the public domain. It can be vendored later, but retain his name and the provenance notice.
 - Every imported code package should carry its original license and an unmodified source link.
 
-## 7. Reading still needed
+## 8. Reading still needed
 
-1. Work through Reid's `E₈` calculations deeply enough to produce a chart-by-chart ledger.
+1. Extend the Borcherds E₈ chart sequence into a complete exceptional-component ledger and independently calculate the intersection matrix, cross-checking Reid.
 2. Read all three du Val papers with a notation concordance.
 3. Compare an ordinary-blowup resolution with an economical weighted-blowup or toric route.
 4. Read the relevant Artin and Laufer sources named by Reid.

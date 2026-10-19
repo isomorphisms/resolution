@@ -1,0 +1,16 @@
+#! /bin/sh
+
+framedir="/data4/cubic-dvd/FRAMES"
+
+thumbsize="90x72"
+
+for mov in `cat list`; do
+    convert "$framedir/$mov/${mov}001.png" -resize "$thumbsize" \
+    "THUMBNAILS/${mov}THB1.png"
+    convert "$framedir/$mov/${mov}040.png" -resize "$thumbsize" \
+    "THUMBNAILS/${mov}THB2.png"
+    convert "$framedir/$mov/${mov}076.png" -resize "$thumbsize" \
+    "THUMBNAILS/${mov}THB3.png"
+    convert "$framedir/$mov/${mov}121.png" -resize "$thumbsize" \
+    "THUMBNAILS/${mov}THB4.png"
+done
