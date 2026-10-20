@@ -35,7 +35,7 @@ jobs:
     env:
       ASAN_OPTIONS: detect_leaks=0
       ITHON_PYTHON: python3
-      ITHON_CHECK_LOG: ${{ github.workspace }}/out/source-checks.ndjson
+      ITHON_CHECK_RECEIPT: ${{ github.workspace }}/out/source-checks.ndjson
     steps:
       - name: Check out resolution
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
