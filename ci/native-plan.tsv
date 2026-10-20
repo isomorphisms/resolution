@@ -1,0 +1,2 @@
+native-render	grease render/native/build-and-render.grease out/native
+check	.ithon/ithon render/native/verify_outputs.pi out/native --negative-controls

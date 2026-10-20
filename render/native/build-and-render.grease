@@ -1,0 +1,26 @@
+#!/usr/bin/env grease
+# Qualified ICK compiles all owned C; the pinned SURFER core is explicit input.
+if (int($#) !== 1) {
+  echo 'usage: build-and-render.grease OUTPUT_DIRECTORY' >&2
+  exit 2
+}
+var root = "$(git rev-parse --show-toplevel)"
+var surfer = get(ENV, 'SURFER_ROOT') or "$root/.deps/algebraic-variety-explorer-mobile"
+var compiler = get(ENV, 'ICK') or ''
+if (not compiler.startsWith('/')) {
+  echo 'ICK must identify the absolute qualified frontend; no ambient fallback' >&2
+  exit 2
+}
+test -x "$compiler"
+test "$(git -C "$surfer" rev-parse HEAD)" = 3928dcd1d023baab7c44bb4fc34f0ebe331f6237
+test -f "$surfer/native/surfer_raytracer.h"
+test -f "$surfer/native/surfer_raytracer.c"
+mkdir -p "$root/.build/native" "$1"
+"$compiler" -fno-link-libatomic -static-libgcc \
+  -std=c17 -Wall -Wextra -Werror -pedantic -O2 \
+  -fno-fast-math -ffp-contract=off "-I$surfer/native" \
+  "$surfer/native/surfer_raytracer.c" "$root/render/native/madore_demo.c" \
+  -lm -o "$root/.build/native/madore-demo"
+"$root/.build/native/madore-demo" "$1"
+cd -- "$1"
+sha256sum -- *.ppm > SHA256SUMS

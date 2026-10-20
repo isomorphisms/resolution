@@ -1,0 +1,3 @@
+# Reduced actual failed parse from the first compiler invocation.
+var surfer = '/declared/source'
+printf '%s\n' -I"$surfer/native"

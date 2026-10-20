@@ -1,0 +1,5 @@
+native-render depends on render/native/build-and-render.grease render/native/madore_demo.c
+    grease render/native/build-and-render.grease out/native
+
+check depends on native-render render/native/verify_outputs.pi
+    .ithon/ithon render/native/verify_outputs.pi out/native --negative-controls

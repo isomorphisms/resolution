@@ -1,0 +1,9 @@
+.acceptance/
+.aici-host/
+.aici-ike/
+.ick-host-source/
+.ike-host/
+.ithon/
+.deps/
+.build/
+out/

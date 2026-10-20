@@ -1,0 +1,115 @@
+"""Mandatory checked structural acceptance of the actual native PPM files."""
+import hashlib
+import sys
+import shutil
+from pathlib import Path
+from tempfile import TemporaryDirectory
+from builtins import ValueError, SystemExit
+
+EXPECTED ∈ list[str] ← ["a1-frame-000.ppm", "a1-frame-075.ppm",
+    "a1-frame-150.ppm", "a1-frame-225.ppm", "cayley-affine.ppm",
+    "madore-03s01a-native.ppm"]
+
+def require(condition ∈ bool, message ∈ str) → None:
+    if not condition:
+        raise ValueError(message)
+
+def read_ppm(path ∈ object) → tuple[int, int, bytes]:
+    data ∈ bytes ← path.read_bytes()
+    parts ∈ list[bytes] ← data.split(b"\n", 3)
+    require(len(parts) == 4 and parts[0] == b"P6" and parts[2] == b"255",
+            str(path) + ": unsupported PPM header")
+    dimensions ∈ list[bytes] ← parts[1].split()
+    require(len(dimensions) == 2, "PPM needs two dimensions")
+    width_text ∈ str ← dimensions[0].decode()
+    height_text ∈ str ← dimensions[1].decode()
+    width ∈ int ← int(width_text)
+    height ∈ int ← int(height_text)
+    pixels ∈ bytes ← parts[3]
+    require(len(pixels) == width * height * 3, "wrong pixel byte count")
+    return (width, height, pixels)
+
+def verify(output_directory ∈ object) → dict[str, str]:
+    digests ∈ dict[str, str] ← {}
+    for name in EXPECTED:
+        path ∈ object ← output_directory.joinpath(name)
+        frame ∈ tuple[int, int, bytes] ← read_ppm(path)
+        require(frame[0] == 320 and frame[1] == 320, "expected 320x320")
+        pixels ∈ bytes ← frame[2]
+        colors ∈ dict[str, bool] ← {}
+        for index in range(0, len(pixels), 3):
+            pixel ∈ bytes ← pixels[index:index + 3]
+            encoded ∈ str ← pixel.hex()
+            colors[encoded] = True
+        require(len(colors) >= 32, "fewer than 32 distinct colors")
+        data ∈ bytes ← path.read_bytes()
+        digest ∈ str ← hashlib.sha256(data).hexdigest()
+        digests[name] = digest
+    require(digests["a1-frame-000.ppm"] == digests["a1-frame-150.ppm"],
+            "symmetric frames 0 and 150 should be byte-identical")
+    distinct ∈ dict[str, bool] ← {}
+    for name in EXPECTED:
+        if name != "a1-frame-150.ppm":
+            distinct[digests[name]] = True
+    require(len(distinct) == 5, "the five selected frames must be distinct")
+    manifest ∈ str ← output_directory.joinpath("manifest.tsv").read_text(encoding="utf-8")
+    require("a1\t75\t0\t" in manifest, "manifest singular parameter missing")
+    require("madore-03s01a\t75\t0\t" in manifest, "manifest adapted Madore scene missing")
+    return digests
+
+def negative_controls(output_directory ∈ object) → None:
+    diagnostics ∈ list[str] ← ["unsupported PPM header", "pixel byte count",
+        "expected 320x320", "32 distinct colors", "byte-identical",
+        "must be distinct", "singular parameter missing", "adapted Madore scene missing"]
+    for case in range(0, len(diagnostics)):
+        with TemporaryDirectory(prefix="resolution-ppm-refusal-") as directory:
+            candidate ∈ object ← Path(directory).joinpath("candidate")
+            shutil.copytree(output_directory, candidate)
+            image ∈ object ← candidate.joinpath("a1-frame-000.ppm")
+            data ∈ bytes ← image.read_bytes()
+            frame ∈ tuple[int, int, bytes] ← read_ppm(image)
+            pixels ∈ bytes ← frame[2]
+            if case == 0:
+                image.write_bytes(b"P3" + data[2:])
+            elif case == 1:
+                image.write_bytes(data[:-1])
+            elif case == 2:
+                image.write_bytes(b"P6\n160 640\n255\n" + pixels)
+            elif case == 3:
+                flat ∈ bytes ← bytes(len(pixels))
+                image.write_bytes(b"P6\n320 320\n255\n" + flat)
+            elif case == 4:
+                alternate ∈ bytes ← candidate.joinpath("a1-frame-075.ppm").read_bytes()
+                candidate.joinpath("a1-frame-150.ppm").write_bytes(alternate)
+            elif case == 5:
+                candidate.joinpath("a1-frame-075.ppm").write_bytes(data)
+            else:
+                manifest_path ∈ object ← candidate.joinpath("manifest.tsv")
+                manifest ∈ str ← manifest_path.read_text()
+                marker ∈ str ← "a1\t75\t0\t"
+                if case == 7:
+                    marker = "madore-03s01a\t75\t0\t"
+                damaged ∈ str ← manifest.replace(marker, "missing\t75\t0\t")
+                manifest_path.write_text(damaged)
+            refused ∈ bool ← False
+            try:
+                verify(candidate)
+            except ValueError as error:
+                refused = diagnostics[case] in str(error)
+            require(refused, "damaged actual render escaped intended gate: " + diagnostics[case])
+    print("PASS eight damaged actual-render controls refused at their intended gates")
+
+def main() → int:
+    arguments ∈ list[str] ← sys.argv
+    require(len(arguments) == 2 or len(arguments) == 3, "usage: verify_outputs.pi OUTPUT_DIRECTORY [--negative-controls]")
+    output_directory ∈ object ← Path(arguments[1])
+    digests ∈ dict[str, str] ← verify(output_directory)
+    if len(arguments) == 3:
+        require(arguments[2] == "--negative-controls", "unknown verifier option")
+        negative_controls(output_directory)
+    print("native render acceptance: ok")
+    for name in EXPECTED:
+        print(digests[name] + "  " + name)
+    return 0
+
+raise SystemExit(main())
