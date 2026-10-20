@@ -5,47 +5,117 @@ on:
     paths:
       - 'render/**'
       - '.github/workflows/render-acceptance.yml'
+      - '.github/actions/grease-host/**'
+      - 'ci/**'
+      - 'Ikefile'
   pull_request:
     paths:
       - 'render/**'
       - '.github/workflows/render-acceptance.yml'
+      - '.github/actions/grease-host/**'
+      - 'ci/**'
+      - 'Ikefile'
   workflow_dispatch:
 
 permissions:
   contents: read
+  actions: read
 
 jobs:
+  qualified-ick:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Qualify and retain the exact C compiler
+        uses: isomorphisms/ai-ci/ick-host@903b2cb27ea572c9c6cb2ffa9f39e0fbf06ec9f8
+
   native-surface-render:
-    runs-on: ubuntu-latest
+    needs: qualified-ick
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
+    env:
+      ASAN_OPTIONS: detect_leaks=0
+      ITHON_PYTHON: python3
+      ITHON_CHECK_LOG: ${{ github.workspace }}/out/source-checks.ndjson
     steps:
       - name: Check out resolution
-        uses: actions/checkout@v4
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          persist-credentials: false
+
+      - name: Stage the recorded Grease host compatibility runtime
+        uses: ./.github/actions/grease-host
+
+      - name: Qualify the explicit ICK compiler
+        id: ick
+        uses: isomorphisms/ai-ci/ick-host@903b2cb27ea572c9c6cb2ffa9f39e0fbf06ec9f8
 
       - name: Check out pinned SURFER numerical core
-        uses: actions/checkout@v4
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
           repository: isomorphismes/algebraic-variety-explorer-mobile
           ref: 3928dcd1d023baab7c44bb4fc34f0ebe331f6237
           path: .deps/algebraic-variety-explorer-mobile
+          persist-credentials: false
 
-      - name: Compile and render native comparison frames
-        run: bash render/native/build-and-render.sh out/native
+      - name: Check out accepted checked Ithon
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          repository: dilapidated-shed/ithon
+          ref: 74ab6d6044b07b76a910978437a34a6b5ac6acda
+          path: .ithon
+          persist-credentials: false
 
-      - name: Verify native outputs
-        run: python3 render/native/verify_outputs.py out/native
+      - name: Check out pinned Ike
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          repository: dilapidated-shed/ike
+          ref: 71178c348dd4621bd999ebdb6b0b60bac03fc85d
+          path: .ike-host
+          persist-credentials: false
+
+      - name: Check out the independent C toolchain gate
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          repository: isomorphisms/ai-ci
+          ref: 903b2cb27ea572c9c6cb2ffa9f39e0fbf06ec9f8
+          path: .aici-host
+          sparse-checkout: |
+            src/aici.c
+            contracts/build-toolchain-v0.contract.tsv
+          persist-credentials: false
+
+      - name: Check out the independent checked Ike receipt gate
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          repository: isomorphisms/ai-ci
+          ref: fada3841bc119c9b64e4076a56b2dffedf0a9d8b
+          path: .aici-ike
+          sparse-checkout: gpu-follower
+          persist-credentials: false
+
+      - name: Execute actual ICK render, checked oracle, adverse controls and independent Ike gate
+        env:
+          ICK: ${{ steps.ick.outputs.compiler }}
+        shell: grease {0}
+        run: grease ci/qualify-native.grease
 
       - name: Upload native frames and receipts
-        uses: actions/upload-artifact@v4
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
           name: native-surface-frames
-          path: out/native
+          path: out/
           if-no-files-found: error
 
   original-madore-povray:
     runs-on: ubuntu-latest
     steps:
       - name: Check out resolution
-        uses: actions/checkout@v4
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          persist-credentials: false
 
       - name: Install POV-Ray
         run: |
@@ -57,7 +127,7 @@ jobs:
 
       - name: Upload source inventory, logs, and reference frame
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
           name: madore-povray-reference
           path: out/madore-reference

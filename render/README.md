@@ -81,16 +81,21 @@ geometry and root behavior, not the PNG bytes.
 
 Check out the pinned renderer next to this repository:
 
-```sh
+```grease
 git clone https://github.com/isomorphismes/algebraic-variety-explorer-mobile.git \
   .deps/algebraic-variety-explorer-mobile
 git -C .deps/algebraic-variety-explorer-mobile \
   checkout 3928dcd1d023baab7c44bb4fc34f0ebe331f6237
-bash render/native/build-and-render.sh out/native
-python3 render/native/verify_outputs.py out/native
+grease render/native/build-and-render.grease out/native
+.ithon/ithon render/native/verify_outputs.pi out/native --negative-controls
 ```
 
-Set `SURFER_ROOT` to reuse another checkout. CI runs the same acceptance path.
+Set `ICK` to the absolute qualified ICK frontend and `SURFER_ROOT` to reuse
+the exact pinned checkout. There is no ambient compiler fallback. CI runs
+the pinned-Ike `check` graph, retains its actual receipt and verifies it with
+the independent AICI gate. The checked Ithon verifier preserves every original
+PPM assertion and rejects eight damaged copies of the actual rendered files.
+The unchanged original POV-Ray reference script below remains legacy shell.
 
 ## Run Madore's original lane
 

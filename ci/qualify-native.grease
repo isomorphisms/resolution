@@ -1,0 +1,16 @@
+#!/usr/bin/env grease
+var compiler = get(ENV, 'ICK') or ''
+var root = "$(git rev-parse --show-toplevel)"
+test -x "$compiler"
+mkdir -p .build/native out
+"$compiler" -fno-link-libatomic -static-libgcc -std=c11 -Wall -Wextra -Wpedantic -Werror -O2 \
+  .ike-host/ike.c -o .build/ike
+"$compiler" -fno-link-libatomic -static-libgcc -std=c11 -Wall -Wextra -Werror -O2 \
+  .aici-host/src/aici.c -o .build/aici
+.build/aici verify .aici-host/contracts/build-toolchain-v0.contract.tsv "$root"
+var identity = "sha256:$(sha256sum Ikefile | cut -d ' ' -f 1)"
+env IKE_RECEIPT="$root/out/primary.ike.tsv" IKE_IKEFILE_IDENTITY="$identity" \
+  .build/ike check
+.ithon/ithon .aici-ike/gpu-follower/verify_ike.pi \
+  out/primary.ike.tsv Ikefile check 'POSIX-system()' ci/native-plan.tsv
+sha256sum .build/ike .build/aici .build/native/madore-demo out/primary.ike.tsv
